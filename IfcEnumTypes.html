@@ -1,0 +1,6135 @@
+<html lang="en">
+	<head>
+		<link href="https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/assets/css/mini-default.min.css"
+		      rel="stylesheet"/>
+		<link href="https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/assets/css/style.css"
+		      rel="stylesheet"/>
+		<meta content="width=device-width, initial-scale=1"
+		      name="viewport"/>
+		<meta charset="utf-8"/>
+		<title>IFC Enumeration types</title>
+		<link href="https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/assets/img/favicon.ico"
+		      rel="icon"
+		      type="image/x-icon"/>
+		<style> 
+				 /* Remove default bullets, margins and padding from the parent ol */
+				ol{
+				  list-style-type: none;
+				  margin: 0;
+				  padding: 0;
+				}
+				li{
+					margin: 0px;
+					padding-left: 20px;
+				}
+				/* Style the caret/arrow */
+				.caret {
+				  cursor: pointer;
+				  user-select: none; /* Prevent text selection */
+				}
+
+				/* Create the caret/arrow with a unicode, and style it */
+				.caret::before {
+				  content: "\25B6";
+				  color: black;
+				  display: inline-block;
+				  margin-right: 6px;
+				}
+
+				/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+				.caret-down::before {
+				  transform: rotate(90deg);
+				}
+
+				/* Hide the nested list */
+				.nested {
+				  display: none;
+				}
+
+				/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+				.active {
+				  display: block;
+				} 		
+				.ifc-tree{
+					display:inline-table;
+					margin: 4px;
+					width: 500px;
+					background-color: #d9e6f0;
+					border:1px solid #ccc;
+				}
+				input[type="button"]{
+					color: #ffffff;
+					background-color: #0033cc;
+					padding: 8px;
+					border-radius: 6px;
+					font-weight:bold;
+				}
+		</style>
+	</head>
+	<body class="">
+<div class="container">
+	<div class="ifc-tree" id="ifc2x3-enumerations">
+		<h1>IFC2x3 Enumeration types</h1>
+		<iframe src="https://standards.buildingsmart.org/IFC/RELEASE/IFC2x3/TC1/HTML/alphabeticalorder_enumtype.htm"
+		style="border:0; height:1000px; width:100%">
+		</iframe>
+	</div>
+
+	<div class="ifc-tree"
+		 id="ifc40-enumerations">
+			<h1>IFC4.0 Enumeration types</h1>
+			<a href="https://standards.buildingsmart.org/IFC/RELEASE/IFC4/FINAL/HTML/annex/annex-b/alphabeticalorder_enumtypes.htm" target="_blank">
+				Online list
+			</a><br/>
+			<input type="button"
+				   value="Expand all"
+				   onclick="expandOrCollapse(true, 'ifc40-enumerations')"/>
+			<input type="button"
+				   value="Collapse all"
+				   onclick="expandOrCollapse(false, 'ifc40-enumerations')"/>	<ol>
+			<li><span class="caret">ActionRequestTypeEnum</span><ol class="nested">
+					<li>EMAIL</li>
+					<li>FAX</li>
+					<li>PHONE</li>
+					<li>POST</li>
+					<li>VERBAL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ActionSourceTypeEnum</span>
+				<ol class="nested">
+					<li>DEAD_LOAD_G</li>
+					<li>COMPLETION_G1</li>
+					<li>LIVE_LOAD_Q</li>
+					<li>SNOW_S</li>
+					<li>WIND_W</li>
+					<li>PRESTRESSING_P</li>
+					<li>SETTLEMENT_U</li>
+					<li>TEMPERATURE_T</li>
+					<li>EARTHQUAKE_E</li>
+					<li>FIRE</li>
+					<li>IMPULSE</li>
+					<li>IMPACT</li>
+					<li>TRANSPORT</li>
+					<li>ERECTION</li>
+					<li>PROPPING</li>
+					<li>SYSTEM_IMPERFECTION</li>
+					<li>SHRINKAGE</li>
+					<li>CREEP</li>
+					<li>LACK_OF_FIT</li>
+					<li>BUOYANCY</li>
+					<li>ICE</li>
+					<li>CURRENT</li>
+					<li>WAVE</li>
+					<li>RAIN</li>
+					<li>BRAKES</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ActionTypeEnum</span>
+				<ol class="nested">
+					<li>PERMANENT_G</li>
+					<li>VARIABLE_Q</li>
+					<li>EXTRAORDINARY_A</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ActuatorTypeEnum</span>
+				<ol class="nested">
+					<li>ELECTRICACTUATOR</li>
+					<li>HANDOPERATEDACTUATOR</li>
+					<li>HYDRAULICACTUATOR</li>
+					<li>PNEUMATICACTUATOR</li>
+					<li>THERMOSTATICACTUATOR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">AddressTypeEnum</span>
+				<ol class="nested">
+					<li>OFFICE</li>
+					<li>SITE</li>
+					<li>HOME</li>
+					<li>DISTRIBUTIONPOINT</li>
+					<li>USERDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">AirTerminalBoxTypeEnum</span>
+				<ol class="nested">
+					<li>CONSTANTFLOW</li>
+					<li>VARIABLEFLOWPRESSUREDEPENDANT</li>
+					<li>VARIABLEFLOWPRESSUREINDEPENDANT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">AirTerminalTypeEnum</span>
+				<ol class="nested">
+					<li>DIFFUSER</li>
+					<li>GRILLE</li>
+					<li>LOUVRE</li>
+					<li>REGISTER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">AirToAirHeatRecoveryTypeEnum</span>
+				<ol class="nested">
+					<li>FIXEDPLATECOUNTERFLOWEXCHANGER</li>
+					<li>FIXEDPLATECROSSFLOWEXCHANGER</li>
+					<li>FIXEDPLATEPARALLELFLOWEXCHANGER</li>
+					<li>ROTARYWHEEL</li>
+					<li>RUNAROUNDCOILLOOP</li>
+					<li>HEATPIPE</li>
+					<li>TWINTOWERENTHALPYRECOVERYLOOPS</li>
+					<li>THERMOSIPHONSEALEDTUBEHEATEXCHANGERS</li>
+					<li>THERMOSIPHONCOILTYPEHEATEXCHANGERS</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">AlarmTypeEnum</span>
+				<ol class="nested">
+					<li>BELL</li>
+					<li>BREAKGLASSBUTTON</li>
+					<li>LIGHT</li>
+					<li>MANUALPULLBOX</li>
+					<li>SIREN</li>
+					<li>WHISTLE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">AnalysisModelTypeEnum</span>
+				<ol class="nested">
+					<li>IN_PLANE_LOADING_2D</li>
+					<li>OUT_PLANE_LOADING_2D</li>
+					<li>LOADING_3D</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">AnalysisTheoryTypeEnum</span>
+				<ol class="nested">
+					<li>FIRST_ORDER_THEORY</li>
+					<li>SECOND_ORDER_THEORY</li>
+					<li>THIRD_ORDER_THEORY</li>
+					<li>FULL_NONLINEAR_THEORY</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ArithmeticOperatorEnum</span>
+				<ol class="nested">
+					<li>ADD</li>
+					<li>DIVIDE</li>
+					<li>MULTIPLY</li>
+					<li>SUBTRACT</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">AssemblyPlaceEnum</span>
+				<ol class="nested">
+					<li>SITE</li>
+					<li>FACTORY</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">AudioVisualApplianceTypeEnum</span>
+				<ol class="nested">
+					<li>AMPLIFIER</li>
+					<li>CAMERA</li>
+					<li>DISPLAY</li>
+					<li>MICROPHONE</li>
+					<li>PLAYER</li>
+					<li>PROJECTOR</li>
+					<li>RECEIVER</li>
+					<li>SPEAKER</li>
+					<li>SWITCHER</li>
+					<li>TELEPHONE</li>
+					<li>TUNER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">BSplineCurveForm</span>
+				<ol class="nested">
+					<li>POLYLINE_FORM</li>
+					<li>CIRCULAR_ARC</li>
+					<li>ELLIPTIC_ARC</li>
+					<li>PARABOLIC_ARC</li>
+					<li>HYPERBOLIC_ARC</li>
+					<li>UNSPECIFIED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">BSplineSurfaceForm</span>
+				<ol class="nested">
+					<li>PLANE_SURF</li>
+					<li>CYLINDRICAL_SURF</li>
+					<li>CONICAL_SURF</li>
+					<li>SPHERICAL_SURF</li>
+					<li>TOROIDAL_SURF</li>
+					<li>SURF_OF_REVOLUTION</li>
+					<li>RULED_SURF</li>
+					<li>GENERALISED_CONE</li>
+					<li>QUADRIC_SURF</li>
+					<li>SURF_OF_LINEAR_EXTRUSION</li>
+					<li>UNSPECIFIED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">BeamTypeEnum</span>
+				<ol class="nested">
+					<li>BEAM</li>
+					<li>JOIST</li>
+					<li>HOLLOWCORE</li>
+					<li>LINTEL</li>
+					<li>SPANDREL</li>
+					<li>T_BEAM</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">BenchmarkEnum</span>
+				<ol class="nested">
+					<li>GREATERTHAN</li>
+					<li>GREATERTHANOREQUALTO</li>
+					<li>LESSTHAN</li>
+					<li>LESSTHANOREQUALTO</li>
+					<li>EQUALTO</li>
+					<li>NOTEQUALTO</li>
+					<li>INCLUDES</li>
+					<li>NOTINCLUDES</li>
+					<li>INCLUDEDIN</li>
+					<li>NOTINCLUDEDIN</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">BoilerTypeEnum</span>
+				<ol class="nested">
+					<li>WATER</li>
+					<li>STEAM</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">BooleanOperator</span>
+				<ol class="nested">
+					<li>UNION</li>
+					<li>INTERSECTION</li>
+					<li>DIFFERENCE</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">BuildingElementPartTypeEnum</span>
+				<ol class="nested">
+					<li>INSULATION</li>
+					<li>PRECASTPANEL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">BuildingElementProxyTypeEnum</span>
+				<ol class="nested">
+					<li>COMPLEX</li>
+					<li>ELEMENT</li>
+					<li>PARTIAL</li>
+					<li>PROVISIONFORVOID</li>
+					<li>PROVISIONFORSPACE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">BuildingSystemTypeEnum</span>
+				<ol class="nested">
+					<li>FENESTRATION</li>
+					<li>FOUNDATION</li>
+					<li>LOADBEARING</li>
+					<li>OUTERSHELL</li>
+					<li>SHADING</li>
+					<li>TRANSPORT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">BurnerTypeEnum</span>
+				<ol class="nested">
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">CableCarrierFittingTypeEnum</span>
+				<ol class="nested">
+					<li>BEND</li>
+					<li>CROSS</li>
+					<li>REDUCER</li>
+					<li>TEE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">CableCarrierSegmentTypeEnum</span>
+				<ol class="nested">
+					<li>CABLELADDERSEGMENT</li>
+					<li>CABLETRAYSEGMENT</li>
+					<li>CABLETRUNKINGSEGMENT</li>
+					<li>CONDUITSEGMENT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">CableFittingTypeEnum</span>
+				<ol class="nested">
+					<li>CONNECTOR</li>
+					<li>ENTRY</li>
+					<li>EXIT</li>
+					<li>JUNCTION</li>
+					<li>TRANSITION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">CableSegmentTypeEnum</span>
+				<ol class="nested">
+					<li>BUSBARSEGMENT</li>
+					<li>CABLESEGMENT</li>
+					<li>CONDUCTORSEGMENT</li>
+					<li>CORESEGMENT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ChangeActionEnum</span>
+				<ol class="nested">
+					<li>NOCHANGE</li>
+					<li>MODIFIED</li>
+					<li>ADDED</li>
+					<li>DELETED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ChillerTypeEnum</span>
+				<ol class="nested">
+					<li>AIRCOOLED</li>
+					<li>WATERCOOLED</li>
+					<li>HEATRECOVERY</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ChimneyTypeEnum</span>
+				<ol class="nested">
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">CoilTypeEnum</span>
+				<ol class="nested">
+					<li>DXCOOLINGCOIL</li>
+					<li>ELECTRICHEATINGCOIL</li>
+					<li>GASHEATINGCOIL</li>
+					<li>HYDRONICCOIL</li>
+					<li>STEAMHEATINGCOIL</li>
+					<li>WATERCOOLINGCOIL</li>
+					<li>WATERHEATINGCOIL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ColumnTypeEnum</span>
+				<ol class="nested">
+					<li>COLUMN</li>
+					<li>PILASTER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">CommunicationsApplianceTypeEnum</span>
+				<ol class="nested">
+					<li>ANTENNA</li>
+					<li>COMPUTER</li>
+					<li>FAX</li>
+					<li>GATEWAY</li>
+					<li>MODEM</li>
+					<li>NETWORKAPPLIANCE</li>
+					<li>NETWORKBRIDGE</li>
+					<li>NETWORKHUB</li>
+					<li>PRINTER</li>
+					<li>REPEATER</li>
+					<li>ROUTER</li>
+					<li>SCANNER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ComplexPropertyTemplateTypeEnum</span>
+				<ol class="nested">
+					<li>P_COMPLEX</li>
+					<li>Q_COMPLEX</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">CompressorTypeEnum</span>
+				<ol class="nested">
+					<li>DYNAMIC</li>
+					<li>RECIPROCATING</li>
+					<li>ROTARY</li>
+					<li>SCROLL</li>
+					<li>TROCHOIDAL</li>
+					<li>SINGLESTAGE</li>
+					<li>BOOSTER</li>
+					<li>OPENTYPE</li>
+					<li>HERMETIC</li>
+					<li>SEMIHERMETIC</li>
+					<li>WELDEDSHELLHERMETIC</li>
+					<li>ROLLINGPISTON</li>
+					<li>ROTARYVANE</li>
+					<li>SINGLESCREW</li>
+					<li>TWINSCREW</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">CondenserTypeEnum</span>
+				<ol class="nested">
+					<li>AIRCOOLED</li>
+					<li>EVAPORATIVECOOLED</li>
+					<li>WATERCOOLED</li>
+					<li>WATERCOOLEDBRAZEDPLATE</li>
+					<li>WATERCOOLEDSHELLCOIL</li>
+					<li>WATERCOOLEDSHELLTUBE</li>
+					<li>WATERCOOLEDTUBEINTUBE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ConnectionTypeEnum</span>
+				<ol class="nested">
+					<li>ATPATH</li>
+					<li>ATSTART</li>
+					<li>ATEND</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ConstraintEnum</span>
+				<ol class="nested">
+					<li>HARD</li>
+					<li>SOFT</li>
+					<li>ADVISORY</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ConstructionEquipmentResourceTypeEnum</span>
+				<ol class="nested">
+					<li>DEMOLISHING</li>
+					<li>EARTHMOVING</li>
+					<li>ERECTING</li>
+					<li>HEATING</li>
+					<li>LIGHTING</li>
+					<li>PAVING</li>
+					<li>PUMPING</li>
+					<li>TRANSPORTING</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ConstructionMaterialResourceTypeEnum</span>
+				<ol class="nested">
+					<li>AGGREGATES</li>
+					<li>CONCRETE</li>
+					<li>DRYWALL</li>
+					<li>FUEL</li>
+					<li>GYPSUM</li>
+					<li>MASONRY</li>
+					<li>METAL</li>
+					<li>PLASTIC</li>
+					<li>WOOD</li>
+					<li>NOTDEFINED</li>
+					<li>USERDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ConstructionProductResourceTypeEnum</span>
+				<ol class="nested">
+					<li>ASSEMBLY</li>
+					<li>FORMWORK</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ControllerTypeEnum</span>
+				<ol class="nested">
+					<li>FLOATING</li>
+					<li>PROGRAMMABLE</li>
+					<li>PROPORTIONAL</li>
+					<li>MULTIPOSITION</li>
+					<li>TWOPOSITION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">CooledBeamTypeEnum</span>
+				<ol class="nested">
+					<li>ACTIVE</li>
+					<li>PASSIVE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">CoolingTowerTypeEnum</span>
+				<ol class="nested">
+					<li>NATURALDRAFT</li>
+					<li>MECHANICALINDUCEDDRAFT</li>
+					<li>MECHANICALFORCEDDRAFT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">CostItemTypeEnum</span>
+				<ol class="nested">
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">CostScheduleTypeEnum</span>
+				<ol class="nested">
+					<li>BUDGET</li>
+					<li>COSTPLAN</li>
+					<li>ESTIMATE</li>
+					<li>TENDER</li>
+					<li>PRICEDBILLOFQUANTITIES</li>
+					<li>UNPRICEDBILLOFQUANTITIES</li>
+					<li>SCHEDULEOFRATES</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">CoveringTypeEnum</span>
+				<ol class="nested">
+					<li>CEILING</li>
+					<li>FLOORING</li>
+					<li>CLADDING</li>
+					<li>ROOFING</li>
+					<li>MOLDING</li>
+					<li>SKIRTINGBOARD</li>
+					<li>INSULATION</li>
+					<li>MEMBRANE</li>
+					<li>SLEEVING</li>
+					<li>WRAPPING</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">CrewResourceTypeEnum</span>
+				<ol class="nested">
+					<li>OFFICE</li>
+					<li>SITE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">CurtainWallTypeEnum</span>
+				<ol class="nested">
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">CurveInterpolationEnum</span>
+				<ol class="nested">
+					<li>LINEAR</li>
+					<li>LOG_LINEAR</li>
+					<li>LOG_LOG</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DamperTypeEnum</span>
+				<ol class="nested">
+					<li>BACKDRAFTDAMPER</li>
+					<li>BALANCINGDAMPER</li>
+					<li>BLASTDAMPER</li>
+					<li>CONTROLDAMPER</li>
+					<li>FIREDAMPER</li>
+					<li>FIRESMOKEDAMPER</li>
+					<li>FUMEHOODEXHAUST</li>
+					<li>GRAVITYDAMPER</li>
+					<li>GRAVITYRELIEFDAMPER</li>
+					<li>RELIEFDAMPER</li>
+					<li>SMOKEDAMPER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DataOriginEnum</span>
+				<ol class="nested">
+					<li>MEASURED</li>
+					<li>PREDICTED</li>
+					<li>SIMULATED</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DerivedUnitEnum</span>
+				<ol class="nested">
+					<li>ANGULARVELOCITYUNIT</li>
+					<li>AREADENSITYUNIT</li>
+					<li>COMPOUNDPLANEANGLEUNIT</li>
+					<li>DYNAMICVISCOSITYUNIT</li>
+					<li>HEATFLUXDENSITYUNIT</li>
+					<li>INTEGERCOUNTRATEUNIT</li>
+					<li>ISOTHERMALMOISTURECAPACITYUNIT</li>
+					<li>KINEMATICVISCOSITYUNIT</li>
+					<li>LINEARVELOCITYUNIT</li>
+					<li>MASSDENSITYUNIT</li>
+					<li>MASSFLOWRATEUNIT</li>
+					<li>MOISTUREDIFFUSIVITYUNIT</li>
+					<li>MOLECULARWEIGHTUNIT</li>
+					<li>SPECIFICHEATCAPACITYUNIT</li>
+					<li>THERMALADMITTANCEUNIT</li>
+					<li>THERMALCONDUCTANCEUNIT</li>
+					<li>THERMALRESISTANCEUNIT</li>
+					<li>THERMALTRANSMITTANCEUNIT</li>
+					<li>VAPORPERMEABILITYUNIT</li>
+					<li>VOLUMETRICFLOWRATEUNIT</li>
+					<li>ROTATIONALFREQUENCYUNIT</li>
+					<li>TORQUEUNIT</li>
+					<li>MOMENTOFINERTIAUNIT</li>
+					<li>LINEARMOMENTUNIT</li>
+					<li>LINEARFORCEUNIT</li>
+					<li>PLANARFORCEUNIT</li>
+					<li>MODULUSOFELASTICITYUNIT</li>
+					<li>SHEARMODULUSUNIT</li>
+					<li>LINEARSTIFFNESSUNIT</li>
+					<li>ROTATIONALSTIFFNESSUNIT</li>
+					<li>MODULUSOFSUBGRADEREACTIONUNIT</li>
+					<li>ACCELERATIONUNIT</li>
+					<li>CURVATUREUNIT</li>
+					<li>HEATINGVALUEUNIT</li>
+					<li>IONCONCENTRATIONUNIT</li>
+					<li>LUMINOUSINTENSITYDISTRIBUTIONUNIT</li>
+					<li>MASSPERLENGTHUNIT</li>
+					<li>MODULUSOFLINEARSUBGRADEREACTIONUNIT</li>
+					<li>MODULUSOFROTATIONALSUBGRADEREACTIONUNIT</li>
+					<li>PHUNIT</li>
+					<li>ROTATIONALMASSUNIT</li>
+					<li>SECTIONAREAINTEGRALUNIT</li>
+					<li>SECTIONMODULUSUNIT</li>
+					<li>SOUNDPOWERLEVELUNIT</li>
+					<li>SOUNDPOWERUNIT</li>
+					<li>SOUNDPRESSURELEVELUNIT</li>
+					<li>SOUNDPRESSUREUNIT</li>
+					<li>TEMPERATUREGRADIENTUNIT</li>
+					<li>TEMPERATURERATEOFCHANGEUNIT</li>
+					<li>THERMALEXPANSIONCOEFFICIENTUNIT</li>
+					<li>WARPINGCONSTANTUNIT</li>
+					<li>WARPINGMOMENTUNIT</li>
+					<li>USERDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DirectionSenseEnum</span>
+				<ol class="nested">
+					<li>POSITIVE</li>
+					<li>NEGATIVE</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DiscreteAccessoryTypeEnum</span>
+				<ol class="nested">
+					<li>ANCHORPLATE</li>
+					<li>BRACKET</li>
+					<li>SHOE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DistributionChamberElementTypeEnum</span>
+				<ol class="nested">
+					<li>FORMEDDUCT</li>
+					<li>INSPECTIONCHAMBER</li>
+					<li>INSPECTIONPIT</li>
+					<li>MANHOLE</li>
+					<li>METERCHAMBER</li>
+					<li>SUMP</li>
+					<li>TRENCH</li>
+					<li>VALVECHAMBER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DistributionPortTypeEnum</span>
+				<ol class="nested">
+					<li>CABLE</li>
+					<li>CABLECARRIER</li>
+					<li>DUCT</li>
+					<li>PIPE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DistributionSystemEnum</span>
+				<ol class="nested">
+					<li>AIRCONDITIONING</li>
+					<li>AUDIOVISUAL</li>
+					<li>CHEMICAL</li>
+					<li>CHILLEDWATER</li>
+					<li>COMMUNICATION</li>
+					<li>COMPRESSEDAIR</li>
+					<li>CONDENSERWATER</li>
+					<li>CONTROL</li>
+					<li>CONVEYING</li>
+					<li>DATA</li>
+					<li>DISPOSAL</li>
+					<li>DOMESTICCOLDWATER</li>
+					<li>DOMESTICHOTWATER</li>
+					<li>DRAINAGE</li>
+					<li>EARTHING</li>
+					<li>ELECTRICAL</li>
+					<li>ELECTROACOUSTIC</li>
+					<li>EXHAUST</li>
+					<li>FIREPROTECTION</li>
+					<li>FUEL</li>
+					<li>GAS</li>
+					<li>HAZARDOUS</li>
+					<li>HEATING</li>
+					<li>LIGHTING</li>
+					<li>LIGHTNINGPROTECTION</li>
+					<li>MUNICIPALSOLIDWASTE</li>
+					<li>OIL</li>
+					<li>OPERATIONAL</li>
+					<li>POWERGENERATION</li>
+					<li>RAINWATER</li>
+					<li>REFRIGERATION</li>
+					<li>SECURITY</li>
+					<li>SEWAGE</li>
+					<li>SIGNAL</li>
+					<li>STORMWATER</li>
+					<li>TELEPHONE</li>
+					<li>TV</li>
+					<li>VACUUM</li>
+					<li>VENT</li>
+					<li>VENTILATION</li>
+					<li>WASTEWATER</li>
+					<li>WATERSUPPLY</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DocumentConfidentialityEnum</span>
+				<ol class="nested">
+					<li>PUBLIC</li>
+					<li>RESTRICTED</li>
+					<li>CONFIDENTIAL</li>
+					<li>PERSONAL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DocumentStatusEnum</span>
+				<ol class="nested">
+					<li>DRAFT</li>
+					<li>FINALDRAFT</li>
+					<li>FINAL</li>
+					<li>REVISION</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DoorPanelOperationEnum</span>
+				<ol class="nested">
+					<li>SWINGING</li>
+					<li>DOUBLE_ACTING</li>
+					<li>SLIDING</li>
+					<li>FOLDING</li>
+					<li>REVOLVING</li>
+					<li>ROLLINGUP</li>
+					<li>FIXEDPANEL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DoorPanelPositionEnum</span>
+				<ol class="nested">
+					<li>LEFT</li>
+					<li>MIDDLE</li>
+					<li>RIGHT</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DoorStyleConstructionEnum</span>
+				<ol class="nested">
+					<li>ALUMINIUM</li>
+					<li>HIGH_GRADE_STEEL</li>
+					<li>STEEL</li>
+					<li>WOOD</li>
+					<li>ALUMINIUM_WOOD</li>
+					<li>ALUMINIUM_PLASTIC</li>
+					<li>PLASTIC</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DoorStyleOperationEnum</span>
+				<ol class="nested">
+					<li>SINGLE_SWING_LEFT</li>
+					<li>SINGLE_SWING_RIGHT</li>
+					<li>DOUBLE_DOOR_SINGLE_SWING</li>
+					<li>DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT</li>
+					<li>DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT</li>
+					<li>DOUBLE_SWING_LEFT</li>
+					<li>DOUBLE_SWING_RIGHT</li>
+					<li>DOUBLE_DOOR_DOUBLE_SWING</li>
+					<li>SLIDING_TO_LEFT</li>
+					<li>SLIDING_TO_RIGHT</li>
+					<li>DOUBLE_DOOR_SLIDING</li>
+					<li>FOLDING_TO_LEFT</li>
+					<li>FOLDING_TO_RIGHT</li>
+					<li>DOUBLE_DOOR_FOLDING</li>
+					<li>REVOLVING</li>
+					<li>ROLLINGUP</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DoorTypeEnum</span>
+				<ol class="nested">
+					<li>DOOR</li>
+					<li>GATE</li>
+					<li>TRAPDOOR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DoorTypeOperationEnum</span>
+				<ol class="nested">
+					<li>SINGLE_SWING_LEFT</li>
+					<li>SINGLE_SWING_RIGHT</li>
+					<li>DOUBLE_DOOR_SINGLE_SWING</li>
+					<li>DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT</li>
+					<li>DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT</li>
+					<li>DOUBLE_SWING_LEFT</li>
+					<li>DOUBLE_SWING_RIGHT</li>
+					<li>DOUBLE_DOOR_DOUBLE_SWING</li>
+					<li>SLIDING_TO_LEFT</li>
+					<li>SLIDING_TO_RIGHT</li>
+					<li>DOUBLE_DOOR_SLIDING</li>
+					<li>FOLDING_TO_LEFT</li>
+					<li>FOLDING_TO_RIGHT</li>
+					<li>DOUBLE_DOOR_FOLDING</li>
+					<li>REVOLVING</li>
+					<li>ROLLINGUP</li>
+					<li>SWING_FIXED_LEFT</li>
+					<li>SWING_FIXED_RIGHT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DuctFittingTypeEnum</span>
+				<ol class="nested">
+					<li>BEND</li>
+					<li>CONNECTOR</li>
+					<li>ENTRY</li>
+					<li>EXIT</li>
+					<li>JUNCTION</li>
+					<li>OBSTRUCTION</li>
+					<li>TRANSITION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DuctSegmentTypeEnum</span>
+				<ol class="nested">
+					<li>RIGIDSEGMENT</li>
+					<li>FLEXIBLESEGMENT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">DuctSilencerTypeEnum</span>
+				<ol class="nested">
+					<li>FLATOVAL</li>
+					<li>RECTANGULAR</li>
+					<li>ROUND</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ElectricApplianceTypeEnum</span>
+				<ol class="nested">
+					<li>DISHWASHER</li>
+					<li>ELECTRICCOOKER</li>
+					<li>FREESTANDINGELECTRICHEATER</li>
+					<li>FREESTANDINGFAN</li>
+					<li>FREESTANDINGWATERHEATER</li>
+					<li>FREESTANDINGWATERCOOLER</li>
+					<li>FREEZER</li>
+					<li>FRIDGE_FREEZER</li>
+					<li>HANDDRYER</li>
+					<li>KITCHENMACHINE</li>
+					<li>MICROWAVE</li>
+					<li>PHOTOCOPIER</li>
+					<li>REFRIGERATOR</li>
+					<li>TUMBLEDRYER</li>
+					<li>VENDINGMACHINE</li>
+					<li>WASHINGMACHINE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ElectricDistributionBoardTypeEnum</span>
+				<ol class="nested">
+					<li>CONSUMERUNIT</li>
+					<li>DISTRIBUTIONBOARD</li>
+					<li>MOTORCONTROLCENTRE</li>
+					<li>SWITCHBOARD</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ElectricFlowStorageDeviceTypeEnum</span>
+				<ol class="nested">
+					<li>BATTERY</li>
+					<li>CAPACITORBANK</li>
+					<li>HARMONICFILTER</li>
+					<li>INDUCTORBANK</li>
+					<li>UPS</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ElectricGeneratorTypeEnum</span>
+				<ol class="nested">
+					<li>CHP</li>
+					<li>ENGINEGENERATOR</li>
+					<li>STANDALONE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ElectricMotorTypeEnum</span>
+				<ol class="nested">
+					<li>DC</li>
+					<li>INDUCTION</li>
+					<li>POLYPHASE</li>
+					<li>RELUCTANCESYNCHRONOUS</li>
+					<li>SYNCHRONOUS</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ElectricTimeControlTypeEnum</span>
+				<ol class="nested">
+					<li>TIMECLOCK</li>
+					<li>TIMEDELAY</li>
+					<li>RELAY</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ElementAssemblyTypeEnum</span>
+				<ol class="nested">
+					<li>ACCESSORY_ASSEMBLY</li>
+					<li>ARCH</li>
+					<li>BEAM_GRID</li>
+					<li>BRACED_FRAME</li>
+					<li>GIRDER</li>
+					<li>REINFORCEMENT_UNIT</li>
+					<li>RIGID_FRAME</li>
+					<li>SLAB_FIELD</li>
+					<li>TRUSS</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ElementCompositionEnum</span>
+				<ol class="nested">
+					<li>COMPLEX</li>
+					<li>ELEMENT</li>
+					<li>PARTIAL</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">EngineTypeEnum</span>
+				<ol class="nested">
+					<li>EXTERNALCOMBUSTION</li>
+					<li>INTERNALCOMBUSTION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">EvaporativeCoolerTypeEnum</span>
+				<ol class="nested">
+					<li>DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER</li>
+					<li>DIRECTEVAPORATIVERIGIDMEDIAAIRCOOLER</li>
+					<li>DIRECTEVAPORATIVESLINGERSPACKAGEDAIRCOOLER</li>
+					<li>DIRECTEVAPORATIVEPACKAGEDROTARYAIRCOOLER</li>
+					<li>DIRECTEVAPORATIVEAIRWASHER</li>
+					<li>INDIRECTEVAPORATIVEPACKAGEAIRCOOLER</li>
+					<li>INDIRECTEVAPORATIVEWETCOIL</li>
+					<li>INDIRECTEVAPORATIVECOOLINGTOWERORCOILCOOLER</li>
+					<li>INDIRECTDIRECTCOMBINATION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">EvaporatorTypeEnum</span>
+				<ol class="nested">
+					<li>DIRECTEXPANSION</li>
+					<li>DIRECTEXPANSIONSHELLANDTUBE</li>
+					<li>DIRECTEXPANSIONTUBEINTUBE</li>
+					<li>DIRECTEXPANSIONBRAZEDPLATE</li>
+					<li>FLOODEDSHELLANDTUBE</li>
+					<li>SHELLANDCOIL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">EventTriggerTypeEnum</span>
+				<ol class="nested">
+					<li>EVENTRULE</li>
+					<li>EVENTMESSAGE</li>
+					<li>EVENTTIME</li>
+					<li>EVENTCOMPLEX</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">EventTypeEnum</span>
+				<ol class="nested">
+					<li>STARTEVENT</li>
+					<li>ENDEVENT</li>
+					<li>INTERMEDIATEEVENT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ExternalSpatialElementTypeEnum</span>
+				<ol class="nested">
+					<li>EXTERNAL</li>
+					<li>EXTERNAL_EARTH</li>
+					<li>EXTERNAL_WATER</li>
+					<li>EXTERNAL_FIRE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">FanTypeEnum</span>
+				<ol class="nested">
+					<li>CENTRIFUGALFORWARDCURVED</li>
+					<li>CENTRIFUGALRADIAL</li>
+					<li>CENTRIFUGALBACKWARDINCLINEDCURVED</li>
+					<li>CENTRIFUGALAIRFOIL</li>
+					<li>TUBEAXIAL</li>
+					<li>VANEAXIAL</li>
+					<li>PROPELLORAXIAL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">FastenerTypeEnum</span>
+				<ol class="nested">
+					<li>GLUE</li>
+					<li>MORTAR</li>
+					<li>WELD</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">FilterTypeEnum</span>
+				<ol class="nested">
+					<li>AIRPARTICLEFILTER</li>
+					<li>COMPRESSEDAIRFILTER</li>
+					<li>ODORFILTER</li>
+					<li>OILFILTER</li>
+					<li>STRAINER</li>
+					<li>WATERFILTER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">FireSuppressionTerminalTypeEnum</span>
+				<ol class="nested">
+					<li>BREECHINGINLET</li>
+					<li>FIREHYDRANT</li>
+					<li>HOSEREEL</li>
+					<li>SPRINKLER</li>
+					<li>SPRINKLERDEFLECTOR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">FlowDirectionEnum</span>
+				<ol class="nested">
+					<li>SOURCE</li>
+					<li>SINK</li>
+					<li>SOURCEANDSINK</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">FlowInstrumentTypeEnum</span>
+				<ol class="nested">
+					<li>PRESSUREGAUGE</li>
+					<li>THERMOMETER</li>
+					<li>AMMETER</li>
+					<li>FREQUENCYMETER</li>
+					<li>POWERFACTORMETER</li>
+					<li>PHASEANGLEMETER</li>
+					<li>VOLTMETER_PEAK</li>
+					<li>VOLTMETER_RMS</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">FlowMeterTypeEnum</span>
+				<ol class="nested">
+					<li>ENERGYMETER</li>
+					<li>GASMETER</li>
+					<li>OILMETER</li>
+					<li>WATERMETER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">FootingTypeEnum</span>
+				<ol class="nested">
+					<li>CAISSON_FOUNDATION</li>
+					<li>FOOTING_BEAM</li>
+					<li>PAD_FOOTING</li>
+					<li>PILE_CAP</li>
+					<li>STRIP_FOOTING</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">FurnitureTypeEnum</span>
+				<ol class="nested">
+					<li>CHAIR</li>
+					<li>TABLE</li>
+					<li>DESK</li>
+					<li>BED</li>
+					<li>FILECABINET</li>
+					<li>SHELF</li>
+					<li>SOFA</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">GeographicElementTypeEnum</span>
+				<ol class="nested">
+					<li>TERRAIN</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">GeometricProjectionEnum</span>
+				<ol class="nested">
+					<li>GRAPH_VIEW</li>
+					<li>SKETCH_VIEW</li>
+					<li>MODEL_VIEW</li>
+					<li>PLAN_VIEW</li>
+					<li>REFLECTED_PLAN_VIEW</li>
+					<li>SECTION_VIEW</li>
+					<li>ELEVATION_VIEW</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">GlobalOrLocalEnum</span>
+				<ol class="nested">
+					<li>GLOBAL_COORDS</li>
+					<li>LOCAL_COORDS</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">GridTypeEnum</span>
+				<ol class="nested">
+					<li>RECTANGULAR</li>
+					<li>RADIAL</li>
+					<li>TRIANGULAR</li>
+					<li>IRREGULAR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">HeatExchangerTypeEnum</span>
+				<ol class="nested">
+					<li>PLATE</li>
+					<li>SHELLANDTUBE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">HumidifierTypeEnum</span>
+				<ol class="nested">
+					<li>STEAMINJECTION</li>
+					<li>ADIABATICAIRWASHER</li>
+					<li>ADIABATICPAN</li>
+					<li>ADIABATICWETTEDELEMENT</li>
+					<li>ADIABATICATOMIZING</li>
+					<li>ADIABATICULTRASONIC</li>
+					<li>ADIABATICRIGIDMEDIA</li>
+					<li>ADIABATICCOMPRESSEDAIRNOZZLE</li>
+					<li>ASSISTEDELECTRIC</li>
+					<li>ASSISTEDNATURALGAS</li>
+					<li>ASSISTEDPROPANE</li>
+					<li>ASSISTEDBUTANE</li>
+					<li>ASSISTEDSTEAM</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">InterceptorTypeEnum</span>
+				<ol class="nested">
+					<li>CYCLONIC</li>
+					<li>GREASE</li>
+					<li>OIL</li>
+					<li>PETROL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">InternalOrExternalEnum</span>
+				<ol class="nested">
+					<li>INTERNAL</li>
+					<li>EXTERNAL</li>
+					<li>EXTERNAL_EARTH</li>
+					<li>EXTERNAL_WATER</li>
+					<li>EXTERNAL_FIRE</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">InventoryTypeEnum</span>
+				<ol class="nested">
+					<li>ASSETINVENTORY</li>
+					<li>SPACEINVENTORY</li>
+					<li>FURNITUREINVENTORY</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">JunctionBoxTypeEnum</span>
+				<ol class="nested">
+					<li>DATA</li>
+					<li>POWER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">KnotType</span>
+				<ol class="nested">
+					<li>UNIFORM_KNOTS</li>
+					<li>QUASI_UNIFORM_KNOTS</li>
+					<li>PIECEWISE_BEZIER_KNOTS</li>
+					<li>UNSPECIFIED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">LaborResourceTypeEnum</span>
+				<ol class="nested">
+					<li>ADMINISTRATION</li>
+					<li>CARPENTRY</li>
+					<li>CLEANING</li>
+					<li>CONCRETE</li>
+					<li>DRYWALL</li>
+					<li>ELECTRIC</li>
+					<li>FINISHING</li>
+					<li>FLOORING</li>
+					<li>GENERAL</li>
+					<li>HVAC</li>
+					<li>LANDSCAPING</li>
+					<li>MASONRY</li>
+					<li>PAINTING</li>
+					<li>PAVING</li>
+					<li>PLUMBING</li>
+					<li>ROOFING</li>
+					<li>SITEGRADING</li>
+					<li>STEELWORK</li>
+					<li>SURVEYING</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">LampTypeEnum</span>
+				<ol class="nested">
+					<li>COMPACTFLUORESCENT</li>
+					<li>FLUORESCENT</li>
+					<li>HALOGEN</li>
+					<li>HIGHPRESSUREMERCURY</li>
+					<li>HIGHPRESSURESODIUM</li>
+					<li>LED</li>
+					<li>METALHALIDE</li>
+					<li>OLED</li>
+					<li>TUNGSTENFILAMENT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">LayerSetDirectionEnum</span>
+				<ol class="nested">
+					<li>AXIS1</li>
+					<li>AXIS2</li>
+					<li>AXIS3</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">LightDistributionCurveEnum</span>
+				<ol class="nested">
+					<li>TYPE_A</li>
+					<li>TYPE_B</li>
+					<li>TYPE_C</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">LightEmissionSourceEnum</span>
+				<ol class="nested">
+					<li>COMPACTFLUORESCENT</li>
+					<li>FLUORESCENT</li>
+					<li>HIGHPRESSUREMERCURY</li>
+					<li>HIGHPRESSURESODIUM</li>
+					<li>LIGHTEMITTINGDIODE</li>
+					<li>LOWPRESSURESODIUM</li>
+					<li>LOWVOLTAGEHALOGEN</li>
+					<li>MAINVOLTAGEHALOGEN</li>
+					<li>METALHALIDE</li>
+					<li>TUNGSTENFILAMENT</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">LightFixtureTypeEnum</span>
+				<ol class="nested">
+					<li>POINTSOURCE</li>
+					<li>DIRECTIONSOURCE</li>
+					<li>SECURITYLIGHTING</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">LoadGroupTypeEnum</span>
+				<ol class="nested">
+					<li>LOAD_GROUP</li>
+					<li>LOAD_CASE</li>
+					<li>LOAD_COMBINATION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">LogicalOperatorEnum</span>
+				<ol class="nested">
+					<li>LOGICALAND</li>
+					<li>LOGICALOR</li>
+					<li>LOGICALXOR</li>
+					<li>LOGICALNOTAND</li>
+					<li>LOGICALNOTOR</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">MechanicalFastenerTypeEnum</span>
+				<ol class="nested">
+					<li>ANCHORBOLT</li>
+					<li>BOLT</li>
+					<li>DOWEL</li>
+					<li>NAIL</li>
+					<li>NAILPLATE</li>
+					<li>RIVET</li>
+					<li>SCREW</li>
+					<li>SHEARCONNECTOR</li>
+					<li>STAPLE</li>
+					<li>STUDSHEARCONNECTOR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">MedicalDeviceTypeEnum</span>
+				<ol class="nested">
+					<li>AIRSTATION</li>
+					<li>FEEDAIRUNIT</li>
+					<li>OXYGENGENERATOR</li>
+					<li>OXYGENPLANT</li>
+					<li>VACUUMSTATION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">MemberTypeEnum</span>
+				<ol class="nested">
+					<li>BRACE</li>
+					<li>CHORD</li>
+					<li>COLLAR</li>
+					<li>MEMBER</li>
+					<li>MULLION</li>
+					<li>PLATE</li>
+					<li>POST</li>
+					<li>PURLIN</li>
+					<li>RAFTER</li>
+					<li>STRINGER</li>
+					<li>STRUT</li>
+					<li>STUD</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">MotorConnectionTypeEnum</span>
+				<ol class="nested">
+					<li>BELTDRIVE</li>
+					<li>COUPLING</li>
+					<li>DIRECTDRIVE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">NullStyle</span>
+				<ol class="nested">
+					<li>NULL</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ObjectTypeEnum</span>
+				<ol class="nested">
+					<li>PRODUCT</li>
+					<li>PROCESS</li>
+					<li>CONTROL</li>
+					<li>RESOURCE</li>
+					<li>ACTOR</li>
+					<li>GROUP</li>
+					<li>PROJECT</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ObjectiveEnum</span>
+				<ol class="nested">
+					<li>CODECOMPLIANCE</li>
+					<li>CODEWAIVER</li>
+					<li>DESIGNINTENT</li>
+					<li>EXTERNAL</li>
+					<li>HEALTHANDSAFETY</li>
+					<li>MERGECONFLICT</li>
+					<li>MODELVIEW</li>
+					<li>PARAMETER</li>
+					<li>REQUIREMENT</li>
+					<li>SPECIFICATION</li>
+					<li>TRIGGERCONDITION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">OccupantTypeEnum</span>
+				<ol class="nested">
+					<li>ASSIGNEE</li>
+					<li>ASSIGNOR</li>
+					<li>LESSEE</li>
+					<li>LESSOR</li>
+					<li>LETTINGAGENT</li>
+					<li>OWNER</li>
+					<li>TENANT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">OpeningElementTypeEnum</span>
+				<ol class="nested">
+					<li>OPENING</li>
+					<li>RECESS</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">OutletTypeEnum</span>
+				<ol class="nested">
+					<li>AUDIOVISUALOUTLET</li>
+					<li>COMMUNICATIONSOUTLET</li>
+					<li>POWEROUTLET</li>
+					<li>DATAOUTLET</li>
+					<li>TELEPHONEOUTLET</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">PerformanceHistoryTypeEnum</span>
+				<ol class="nested">
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">PermeableCoveringOperationEnum</span>
+				<ol class="nested">
+					<li>GRILL</li>
+					<li>LOUVER</li>
+					<li>SCREEN</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">PermitTypeEnum</span>
+				<ol class="nested">
+					<li>ACCESS</li>
+					<li>BUILDING</li>
+					<li>WORK</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">PhysicalOrVirtualEnum</span>
+				<ol class="nested">
+					<li>PHYSICAL</li>
+					<li>VIRTUAL</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">PileConstructionEnum</span>
+				<ol class="nested">
+					<li>CAST_IN_PLACE</li>
+					<li>COMPOSITE</li>
+					<li>PRECAST_CONCRETE</li>
+					<li>PREFAB_STEEL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">PileTypeEnum</span>
+				<ol class="nested">
+					<li>BORED</li>
+					<li>DRIVEN</li>
+					<li>JETGROUTING</li>
+					<li>COHESION</li>
+					<li>FRICTION</li>
+					<li>SUPPORT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">PipeFittingTypeEnum</span>
+				<ol class="nested">
+					<li>BEND</li>
+					<li>CONNECTOR</li>
+					<li>ENTRY</li>
+					<li>EXIT</li>
+					<li>JUNCTION</li>
+					<li>OBSTRUCTION</li>
+					<li>TRANSITION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">PipeSegmentTypeEnum</span>
+				<ol class="nested">
+					<li>CULVERT</li>
+					<li>FLEXIBLESEGMENT</li>
+					<li>RIGIDSEGMENT</li>
+					<li>GUTTER</li>
+					<li>SPOOL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">PlateTypeEnum</span>
+				<ol class="nested">
+					<li>CURTAIN_PANEL</li>
+					<li>SHEET</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">PreferredSurfaceCurveRepresentation</span>
+				<ol class="nested">
+					<li>CURVE3D</li>
+					<li>PCURVE_S1</li>
+					<li>PCURVE_S2</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ProcedureTypeEnum</span>
+				<ol class="nested">
+					<li>ADVICE_CAUTION</li>
+					<li>ADVICE_NOTE</li>
+					<li>ADVICE_WARNING</li>
+					<li>CALIBRATION</li>
+					<li>DIAGNOSTIC</li>
+					<li>SHUTDOWN</li>
+					<li>STARTUP</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ProfileTypeEnum</span>
+				<ol class="nested">
+					<li>CURVE</li>
+					<li>AREA</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ProjectOrderTypeEnum</span>
+				<ol class="nested">
+					<li>CHANGEORDER</li>
+					<li>MAINTENANCEWORKORDER</li>
+					<li>MOVEORDER</li>
+					<li>PURCHASEORDER</li>
+					<li>WORKORDER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ProjectedOrTrueLengthEnum</span>
+				<ol class="nested">
+					<li>PROJECTED_LENGTH</li>
+					<li>TRUE_LENGTH</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ProjectionElementTypeEnum</span>
+				<ol class="nested">
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">PropertySetTemplateTypeEnum</span>
+				<ol class="nested">
+					<li>PSET_TYPEDRIVENONLY</li>
+					<li>PSET_TYPEDRIVENOVERRIDE</li>
+					<li>PSET_OCCURRENCEDRIVEN</li>
+					<li>PSET_PERFORMANCEDRIVEN</li>
+					<li>QTO_TYPEDRIVENONLY</li>
+					<li>QTO_TYPEDRIVENOVERRIDE</li>
+					<li>QTO_OCCURRENCEDRIVEN</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ProtectiveDeviceTrippingUnitTypeEnum</span>
+				<ol class="nested">
+					<li>ELECTRONIC</li>
+					<li>ELECTROMAGNETIC</li>
+					<li>RESIDUALCURRENT</li>
+					<li>THERMAL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ProtectiveDeviceTypeEnum</span>
+				<ol class="nested">
+					<li>CIRCUITBREAKER</li>
+					<li>EARTHLEAKAGECIRCUITBREAKER</li>
+					<li>EARTHINGSWITCH</li>
+					<li>FUSEDISCONNECTOR</li>
+					<li>RESIDUALCURRENTCIRCUITBREAKER</li>
+					<li>RESIDUALCURRENTSWITCH</li>
+					<li>VARISTOR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">PumpTypeEnum</span>
+				<ol class="nested">
+					<li>CIRCULATOR</li>
+					<li>ENDSUCTION</li>
+					<li>SPLITCASE</li>
+					<li>SUBMERSIBLEPUMP</li>
+					<li>SUMPPUMP</li>
+					<li>VERTICALINLINE</li>
+					<li>VERTICALTURBINE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">RailingTypeEnum</span>
+				<ol class="nested">
+					<li>HANDRAIL</li>
+					<li>GUARDRAIL</li>
+					<li>BALUSTRADE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">RampFlightTypeEnum</span>
+				<ol class="nested">
+					<li>STRAIGHT</li>
+					<li>SPIRAL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">RampTypeEnum</span>
+				<ol class="nested">
+					<li>STRAIGHT_RUN_RAMP</li>
+					<li>TWO_STRAIGHT_RUN_RAMP</li>
+					<li>QUARTER_TURN_RAMP</li>
+					<li>TWO_QUARTER_TURN_RAMP</li>
+					<li>HALF_TURN_RAMP</li>
+					<li>SPIRAL_RAMP</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">RecurrenceTypeEnum</span>
+				<ol class="nested">
+					<li>DAILY</li>
+					<li>WEEKLY</li>
+					<li>MONTHLY_BY_DAY_OF_MONTH</li>
+					<li>MONTHLY_BY_POSITION</li>
+					<li>BY_DAY_COUNT</li>
+					<li>BY_WEEKDAY_COUNT</li>
+					<li>YEARLY_BY_DAY_OF_MONTH</li>
+					<li>YEARLY_BY_POSITION</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ReflectanceMethodEnum</span>
+				<ol class="nested">
+					<li>BLINN</li>
+					<li>FLAT</li>
+					<li>GLASS</li>
+					<li>MATT</li>
+					<li>METAL</li>
+					<li>MIRROR</li>
+					<li>PHONG</li>
+					<li>PLASTIC</li>
+					<li>STRAUSS</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ReinforcingBarRoleEnum</span>
+				<ol class="nested">
+					<li>MAIN</li>
+					<li>SHEAR</li>
+					<li>LIGATURE</li>
+					<li>STUD</li>
+					<li>PUNCHING</li>
+					<li>EDGE</li>
+					<li>RING</li>
+					<li>ANCHORING</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ReinforcingBarSurfaceEnum</span>
+				<ol class="nested">
+					<li>PLAIN</li>
+					<li>TEXTURED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ReinforcingBarTypeEnum</span>
+				<ol class="nested">
+					<li>ANCHORING</li>
+					<li>EDGE</li>
+					<li>LIGATURE</li>
+					<li>MAIN</li>
+					<li>PUNCHING</li>
+					<li>RING</li>
+					<li>SHEAR</li>
+					<li>STUD</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ReinforcingMeshTypeEnum</span>
+				<ol class="nested">
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">RoleEnum</span>
+				<ol class="nested">
+					<li>SUPPLIER</li>
+					<li>MANUFACTURER</li>
+					<li>CONTRACTOR</li>
+					<li>SUBCONTRACTOR</li>
+					<li>ARCHITECT</li>
+					<li>STRUCTURALENGINEER</li>
+					<li>COSTENGINEER</li>
+					<li>CLIENT</li>
+					<li>BUILDINGOWNER</li>
+					<li>BUILDINGOPERATOR</li>
+					<li>MECHANICALENGINEER</li>
+					<li>ELECTRICALENGINEER</li>
+					<li>PROJECTMANAGER</li>
+					<li>FACILITIESMANAGER</li>
+					<li>CIVILENGINEER</li>
+					<li>COMMISSIONINGENGINEER</li>
+					<li>ENGINEER</li>
+					<li>OWNER</li>
+					<li>CONSULTANT</li>
+					<li>CONSTRUCTIONMANAGER</li>
+					<li>FIELDCONSTRUCTIONMANAGER</li>
+					<li>RESELLER</li>
+					<li>USERDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">RoofTypeEnum</span>
+				<ol class="nested">
+					<li>FLAT_ROOF</li>
+					<li>SHED_ROOF</li>
+					<li>GABLE_ROOF</li>
+					<li>HIP_ROOF</li>
+					<li>HIPPED_GABLE_ROOF</li>
+					<li>GAMBREL_ROOF</li>
+					<li>MANSARD_ROOF</li>
+					<li>BARREL_ROOF</li>
+					<li>RAINBOW_ROOF</li>
+					<li>BUTTERFLY_ROOF</li>
+					<li>PAVILION_ROOF</li>
+					<li>DOME_ROOF</li>
+					<li>FREEFORM</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">SIPrefix</span>
+				<ol class="nested">
+					<li>EXA</li>
+					<li>PETA</li>
+					<li>TERA</li>
+					<li>GIGA</li>
+					<li>MEGA</li>
+					<li>KILO</li>
+					<li>HECTO</li>
+					<li>DECA</li>
+					<li>DECI</li>
+					<li>CENTI</li>
+					<li>MILLI</li>
+					<li>MICRO</li>
+					<li>NANO</li>
+					<li>PICO</li>
+					<li>FEMTO</li>
+					<li>ATTO</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">SIUnitName</span>
+				<ol class="nested">
+					<li>AMPERE</li>
+					<li>BECQUEREL</li>
+					<li>CANDELA</li>
+					<li>COULOMB</li>
+					<li>CUBIC_METRE</li>
+					<li>DEGREE_CELSIUS</li>
+					<li>FARAD</li>
+					<li>GRAM</li>
+					<li>GRAY</li>
+					<li>HENRY</li>
+					<li>HERTZ</li>
+					<li>JOULE</li>
+					<li>KELVIN</li>
+					<li>LUMEN</li>
+					<li>LUX</li>
+					<li>METRE</li>
+					<li>MOLE</li>
+					<li>NEWTON</li>
+					<li>OHM</li>
+					<li>PASCAL</li>
+					<li>RADIAN</li>
+					<li>SECOND</li>
+					<li>SIEMENS</li>
+					<li>SIEVERT</li>
+					<li>SQUARE_METRE</li>
+					<li>STERADIAN</li>
+					<li>TESLA</li>
+					<li>VOLT</li>
+					<li>WATT</li>
+					<li>WEBER</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">SanitaryTerminalTypeEnum</span>
+				<ol class="nested">
+					<li>BATH</li>
+					<li>BIDET</li>
+					<li>CISTERN</li>
+					<li>SHOWER</li>
+					<li>SINK</li>
+					<li>SANITARYFOUNTAIN</li>
+					<li>TOILETPAN</li>
+					<li>URINAL</li>
+					<li>WASHHANDBASIN</li>
+					<li>WCSEAT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">SectionTypeEnum</span>
+				<ol class="nested">
+					<li>UNIFORM</li>
+					<li>TAPERED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">SensorTypeEnum</span>
+				<ol class="nested">
+					<li>COSENSOR</li>
+					<li>CO2SENSOR</li>
+					<li>CONDUCTANCESENSOR</li>
+					<li>CONTACTSENSOR</li>
+					<li>FIRESENSOR</li>
+					<li>FLOWSENSOR</li>
+					<li>FROSTSENSOR</li>
+					<li>GASSENSOR</li>
+					<li>HEATSENSOR</li>
+					<li>HUMIDITYSENSOR</li>
+					<li>IDENTIFIERSENSOR</li>
+					<li>IONCONCENTRATIONSENSOR</li>
+					<li>LEVELSENSOR</li>
+					<li>LIGHTSENSOR</li>
+					<li>MOISTURESENSOR</li>
+					<li>MOVEMENTSENSOR</li>
+					<li>PHSENSOR</li>
+					<li>PRESSURESENSOR</li>
+					<li>RADIATIONSENSOR</li>
+					<li>RADIOACTIVITYSENSOR</li>
+					<li>SMOKESENSOR</li>
+					<li>SOUNDSENSOR</li>
+					<li>TEMPERATURESENSOR</li>
+					<li>WINDSENSOR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">SequenceEnum</span>
+				<ol class="nested">
+					<li>START_START</li>
+					<li>START_FINISH</li>
+					<li>FINISH_START</li>
+					<li>FINISH_FINISH</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">ShadingDeviceTypeEnum</span>
+				<ol class="nested">
+					<li>JALOUSIE</li>
+					<li>SHUTTER</li>
+					<li>AWNING</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">SimplePropertyTemplateTypeEnum</span>
+				<ol class="nested">
+					<li>P_SINGLEVALUE</li>
+					<li>P_Enum</span>
+					<ol class="nested">ERATEDVALUE</li>
+					<li>P_BOUNDEDVALUE</li>
+					<li>P_LISTVALUE</li>
+					<li>P_TABLEVALUE</li>
+					<li>P_REFERENCEVALUE</li>
+					<li>Q_LENGTH</li>
+					<li>Q_AREA</li>
+					<li>Q_VOLUME</li>
+					<li>Q_COUNT</li>
+					<li>Q_WEIGHT</li>
+					<li>Q_TIME</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">SlabTypeEnum</span>
+				<ol class="nested">
+					<li>FLOOR</li>
+					<li>ROOF</li>
+					<li>LANDING</li>
+					<li>BASESLAB</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">SolarDeviceTypeEnum</span>
+				<ol class="nested">
+					<li>SOLARCOLLECTOR</li>
+					<li>SOLARPANEL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">SpaceHeaterTypeEnum</span>
+				<ol class="nested">
+					<li>CONVECTOR</li>
+					<li>RADIATOR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">SpaceTypeEnum</span>
+				<ol class="nested">
+					<li>SPACE</li>
+					<li>PARKING</li>
+					<li>GFA</li>
+					<li>INTERNAL</li>
+					<li>EXTERNAL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">SpatialZoneTypeEnum</span>
+				<ol class="nested">
+					<li>CONSTRUCTION</li>
+					<li>FIRESAFETY</li>
+					<li>LIGHTING</li>
+					<li>OCCUPANCY</li>
+					<li>SECURITY</li>
+					<li>THERMAL</li>
+					<li>TRANSPORT</li>
+					<li>VENTILATION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">StackTerminalTypeEnum</span>
+				<ol class="nested">
+					<li>BIRDCAGE</li>
+					<li>COWL</li>
+					<li>RAINWATERHOPPER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">StairFlightTypeEnum</span>
+				<ol class="nested">
+					<li>STRAIGHT</li>
+					<li>WINDER</li>
+					<li>SPIRAL</li>
+					<li>CURVED</li>
+					<li>FREEFORM</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">StairTypeEnum</span>
+				<ol class="nested">
+					<li>STRAIGHT_RUN_STAIR</li>
+					<li>TWO_STRAIGHT_RUN_STAIR</li>
+					<li>QUARTER_WINDING_STAIR</li>
+					<li>QUARTER_TURN_STAIR</li>
+					<li>HALF_WINDING_STAIR</li>
+					<li>HALF_TURN_STAIR</li>
+					<li>TWO_QUARTER_WINDING_STAIR</li>
+					<li>TWO_QUARTER_TURN_STAIR</li>
+					<li>THREE_QUARTER_WINDING_STAIR</li>
+					<li>THREE_QUARTER_TURN_STAIR</li>
+					<li>SPIRAL_STAIR</li>
+					<li>DOUBLE_RETURN_STAIR</li>
+					<li>CURVED_RUN_STAIR</li>
+					<li>TWO_CURVED_RUN_STAIR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">StateEnum</span>
+				<ol class="nested">
+					<li>READWRITE</li>
+					<li>READONLY</li>
+					<li>LOCKED</li>
+					<li>READWRITELOCKED</li>
+					<li>READONLYLOCKED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">StructuralCurveActivityTypeEnum</span>
+				<ol class="nested">
+					<li>CONST</li>
+					<li>LINEAR</li>
+					<li>POLYGONAL</li>
+					<li>EQUIDISTANT</li>
+					<li>SINUS</li>
+					<li>PARABOLA</li>
+					<li>DISCRETE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">StructuralCurveMemberTypeEnum</span>
+				<ol class="nested">
+					<li>RIGID_JOINED_MEMBER</li>
+					<li>PIN_JOINED_MEMBER</li>
+					<li>CABLE</li>
+					<li>TENSION_MEMBER</li>
+					<li>COMPRESSION_MEMBER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">StructuralSurfaceActivityTypeEnum</span>
+				<ol class="nested">
+					<li>CONST</li>
+					<li>BILINEAR</li>
+					<li>DISCRETE</li>
+					<li>ISOCONTOUR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">StructuralSurfaceMemberTypeEnum</span>
+				<ol class="nested">
+					<li>BENDING_ELEMENT</li>
+					<li>MEMBRANE_ELEMENT</li>
+					<li>SHELL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">SubContractResourceTypeEnum</span>
+				<ol class="nested">
+					<li>PURCHASE</li>
+					<li>WORK</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">SurfaceFeatureTypeEnum</span>
+				<ol class="nested">
+					<li>MARK</li>
+					<li>TAG</li>
+					<li>TREATMENT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">SurfaceSide</li>
+				<li>POSITIVE</li>
+				<li>NEGATIVE</li>
+				<li>BOTH</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">SwitchingDeviceTypeEnum</span>
+			<ol class="nested">
+				<li>CONTACTOR</li>
+				<li>DIMMERSWITCH</li>
+				<li>EMERGENCYSTOP</li>
+				<li>KEYPAD</li>
+				<li>MOMENTARYSWITCH</li>
+				<li>SELECTORSWITCH</li>
+				<li>STARTER</li>
+				<li>SWITCHDISCONNECTOR</li>
+				<li>TOGGLESWITCH</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">SystemFurnitureElementTypeEnum</span>
+			<ol class="nested">
+				<li>PANEL</li>
+				<li>WORKSURFACE</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">TankTypeEnum</span>
+			<ol class="nested">
+				<li>BASIN</li>
+				<li>BREAKPRESSURE</li>
+				<li>EXPANSION</li>
+				<li>FEEDANDEXPANSION</li>
+				<li>PRESSUREVESSEL</li>
+				<li>STORAGE</li>
+				<li>VESSEL</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">TaskDurationEnum</span>
+			<ol class="nested">
+				<li>ELAPSEDTIME</li>
+				<li>WORKTIME</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">TaskTypeEnum</span>
+			<ol class="nested">
+				<li>ATTENDANCE</li>
+				<li>CONSTRUCTION</li>
+				<li>DEMOLITION</li>
+				<li>DISMANTLE</li>
+				<li>DISPOSAL</li>
+				<li>INSTALLATION</li>
+				<li>LOGISTIC</li>
+				<li>MAINTENANCE</li>
+				<li>MOVE</li>
+				<li>OPERATION</li>
+				<li>REMOVAL</li>
+				<li>RENOVATION</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">TendonAnchorTypeEnum</span>
+			<ol class="nested">
+				<li>COUPLER</li>
+				<li>FIXED_END</li>
+				<li>TENSIONING_END</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">TendonTypeEnum</span>
+			<ol class="nested">
+				<li>BAR</li>
+				<li>COATED</li>
+				<li>STRAND</li>
+				<li>WIRE</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">TextPath</span>
+			<ol class="nested">
+				<li>LEFT</li>
+				<li>RIGHT</li>
+				<li>UP</li>
+				<li>DOWN</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">TimeSeriesDataTypeEnum</span>
+			<ol class="nested">
+				<li>CONTINUOUS</li>
+				<li>DISCRETE</li>
+				<li>DISCRETEBINARY</li>
+				<li>PIECEWISEBINARY</li>
+				<li>PIECEWISECONSTANT</li>
+				<li>PIECEWISECONTINUOUS</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">TransformerTypeEnum</span>
+			<ol class="nested">
+				<li>CURRENT</li>
+				<li>FREQUENCY</li>
+				<li>INVERTER</li>
+				<li>RECTIFIER</li>
+				<li>VOLTAGE</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">TransitionCode</span>
+			<ol class="nested">
+				<li>DISCONTINUOUS</li>
+				<li>CONTINUOUS</li>
+				<li>CONTSAMEGRADIENT</li>
+				<li>CONTSAMEGRADIENTSAMECURVATURE</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">TransportElementTypeEnum</span>
+			<ol class="nested">
+				<li>ELEVATOR</li>
+				<li>ESCALATOR</li>
+				<li>MOVINGWALKWAY</li>
+				<li>CRANEWAY</li>
+				<li>LIFTINGGEAR</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">TrimmingPreference</span>
+			<ol class="nested">
+				<li>CARTESIAN</li>
+				<li>PARAMETER</li>
+				<li>UNSPECIFIED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">TubeBundleTypeEnum</span>
+			<ol class="nested">
+				<li>FINNED</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">UnitEnum</span>
+			<ol class="nested">
+				<li>ABSORBEDDOSEUNIT</li>
+				<li>AMOUNTOFSUBSTANCEUNIT</li>
+				<li>AREAUNIT</li>
+				<li>DOSEEQUIVALENTUNIT</li>
+				<li>ELECTRICCAPACITANCEUNIT</li>
+				<li>ELECTRICCHARGEUNIT</li>
+				<li>ELECTRICCONDUCTANCEUNIT</li>
+				<li>ELECTRICCURRENTUNIT</li>
+				<li>ELECTRICRESISTANCEUNIT</li>
+				<li>ELECTRICVOLTAGEUNIT</li>
+				<li>ENERGYUNIT</li>
+				<li>FORCEUNIT</li>
+				<li>FREQUENCYUNIT</li>
+				<li>ILLUMINANCEUNIT</li>
+				<li>INDUCTANCEUNIT</li>
+				<li>LENGTHUNIT</li>
+				<li>LUMINOUSFLUXUNIT</li>
+				<li>LUMINOUSINTENSITYUNIT</li>
+				<li>MAGNETICFLUXDENSITYUNIT</li>
+				<li>MAGNETICFLUXUNIT</li>
+				<li>MASSUNIT</li>
+				<li>PLANEANGLEUNIT</li>
+				<li>POWERUNIT</li>
+				<li>PRESSUREUNIT</li>
+				<li>RADIOACTIVITYUNIT</li>
+				<li>SOLIDANGLEUNIT</li>
+				<li>THERMODYNAMICTEMPERATUREUNIT</li>
+				<li>TIMEUNIT</li>
+				<li>VOLUMEUNIT</li>
+				<li>USERDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">UnitaryControlElementTypeEnum</span>
+			<ol class="nested">
+				<li>ALARMPANEL</li>
+				<li>CONTROLPANEL</li>
+				<li>GASDETECTIONPANEL</li>
+				<li>INDICATORPANEL</li>
+				<li>MIMICPANEL</li>
+				<li>HUMIDISTAT</li>
+				<li>THERMOSTAT</li>
+				<li>WEATHERSTATION</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">UnitaryEquipmentTypeEnum</span>
+			<ol class="nested">
+				<li>AIRHANDLER</li>
+				<li>AIRCONDITIONINGUNIT</li>
+				<li>DEHUMIDIFIER</li>
+				<li>SPLITSYSTEM</li>
+				<li>ROOFTOPUNIT</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">ValveTypeEnum</span>
+			<ol class="nested">
+				<li>AIRRELEASE</li>
+				<li>ANTIVACUUM</li>
+				<li>CHANGEOVER</li>
+				<li>CHECK</li>
+				<li>COMMISSIONING</li>
+				<li>DIVERTING</li>
+				<li>DRAWOFFCOCK</li>
+				<li>DOUBLECHECK</li>
+				<li>DOUBLEREGULATING</li>
+				<li>FAUCET</li>
+				<li>FLUSHING</li>
+				<li>GASCOCK</li>
+				<li>GASTAP</li>
+				<li>ISOLATING</li>
+				<li>MIXING</li>
+				<li>PRESSUREREDUCING</li>
+				<li>PRESSURERELIEF</li>
+				<li>REGULATING</li>
+				<li>SAFETYCUTOFF</li>
+				<li>STEAMTRAP</li>
+				<li>STOPCOCK</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">VibrationIsolatorTypeEnum</span>
+			<ol class="nested">
+				<li>COMPRESSION</li>
+				<li>SPRING</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">VoidingFeatureTypeEnum</span>
+			<ol class="nested">
+				<li>CUTOUT</li>
+				<li>NOTCH</li>
+				<li>HOLE</li>
+				<li>MITER</li>
+				<li>CHAMFER</li>
+				<li>EDGE</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">WallTypeEnum</span>
+			<ol class="nested">
+				<li>MOVABLE</li>
+				<li>PARAPET</li>
+				<li>PARTITIONING</li>
+				<li>PLUMBINGWALL</li>
+				<li>SHEAR</li>
+				<li>SOLIDWALL</li>
+				<li>STANDARD</li>
+				<li>POLYGONAL</li>
+				<li>ELEMENTEDWALL</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">WasteTerminalTypeEnum</span>
+			<ol class="nested">
+				<li>FLOORTRAP</li>
+				<li>FLOORWASTE</li>
+				<li>GULLYSUMP</li>
+				<li>GULLYTRAP</li>
+				<li>ROOFDRAIN</li>
+				<li>WASTEDISPOSALUNIT</li>
+				<li>WASTETRAP</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">WindowPanelOperationEnum</span>
+			<ol class="nested">
+				<li>SIDEHUNGRIGHTHAND</li>
+				<li>SIDEHUNGLEFTHAND</li>
+				<li>TILTANDTURNRIGHTHAND</li>
+				<li>TILTANDTURNLEFTHAND</li>
+				<li>TOPHUNG</li>
+				<li>BOTTOMHUNG</li>
+				<li>PIVOTHORIZONTAL</li>
+				<li>PIVOTVERTICAL</li>
+				<li>SLIDINGHORIZONTAL</li>
+				<li>SLIDINGVERTICAL</li>
+				<li>REMOVABLECASEMENT</li>
+				<li>FIXEDCASEMENT</li>
+				<li>OTHEROPERATION</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">WindowPanelPositionEnum</span>
+			<ol class="nested">
+				<li>LEFT</li>
+				<li>MIDDLE</li>
+				<li>RIGHT</li>
+				<li>BOTTOM</li>
+				<li>TOP</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">WindowStyleConstructionEnum</span>
+			<ol class="nested">
+				<li>ALUMINIUM</li>
+				<li>HIGH_GRADE_STEEL</li>
+				<li>STEEL</li>
+				<li>WOOD</li>
+				<li>ALUMINIUM_WOOD</li>
+				<li>PLASTIC</li>
+				<li>OTHER_CONSTRUCTION</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">WindowStyleOperationEnum</span>
+			<ol class="nested">
+				<li>SINGLE_PANEL</li>
+				<li>DOUBLE_PANEL_VERTICAL</li>
+				<li>DOUBLE_PANEL_HORIZONTAL</li>
+				<li>TRIPLE_PANEL_VERTICAL</li>
+				<li>TRIPLE_PANEL_BOTTOM</li>
+				<li>TRIPLE_PANEL_TOP</li>
+				<li>TRIPLE_PANEL_LEFT</li>
+				<li>TRIPLE_PANEL_RIGHT</li>
+				<li>TRIPLE_PANEL_HORIZONTAL</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">WindowTypeEnum</span>
+			<ol class="nested">
+				<li>WINDOW</li>
+				<li>SKYLIGHT</li>
+				<li>LIGHTDOME</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">WindowTypePartitioningEnum</span>
+			<ol class="nested">
+				<li>SINGLE_PANEL</li>
+				<li>DOUBLE_PANEL_VERTICAL</li>
+				<li>DOUBLE_PANEL_HORIZONTAL</li>
+				<li>TRIPLE_PANEL_VERTICAL</li>
+				<li>TRIPLE_PANEL_BOTTOM</li>
+				<li>TRIPLE_PANEL_TOP</li>
+				<li>TRIPLE_PANEL_LEFT</li>
+				<li>TRIPLE_PANEL_RIGHT</li>
+				<li>TRIPLE_PANEL_HORIZONTAL</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">WorkCalendarTypeEnum</span>
+			<ol class="nested">
+				<li>FIRSTSHIFT</li>
+				<li>SECONDSHIFT</li>
+				<li>THIRDSHIFT</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">WorkPlanTypeEnum</span>
+			<ol class="nested">
+				<li>ACTUAL</li>
+				<li>BASELINE</li>
+				<li>PLANNED</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+		<li>
+			<span class="caret">WorkScheduleTypeEnum</span>
+			<ol class="nested">
+				<li>ACTUAL</li>
+				<li>BASELINE</li>
+				<li>PLANNED</li>
+				<li>USERDEFINED</li>
+				<li>NOTDEFINED</li>
+			</ol>
+		</li>
+	</ol>
+	</div>
+	<div class="ifc-tree"
+		 id="ifc43-enumerations">
+			<h1>IFC4.3 Enumeration types</h1>
+			<a href="https://ifc43-docs.standards.buildingsmart.org/IFC/RELEASE/IFC4x3/HTML/annex-b2.html" target="_blank">
+				Online list</a><br/>
+			<input type="button"
+				   value="Expand all"
+				   onclick="expandOrCollapse(true, 'ifc43-enumerations')"/>
+			<input type="button"
+				   value="Collapse all"
+				   onclick="expandOrCollapse(false, 'ifc43-enumerations')"/>	<ol>				
+			<ol>
+			<li>
+				<span class="caret">IfcActionRequestTypeEnum</span>
+				<ol class="nested">
+					<li>EMAIL</li>
+					<li>FAX</li>
+					<li>PHONE</li>
+					<li>POST</li>
+					<li>VERBAL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcActionSourceTypeEnum</span>
+				<ol class="nested">
+					<li>DEAD_LOAD_G</li>
+					<li>COMPLETION_G1</li>
+					<li>LIVE_LOAD_Q</li>
+					<li>SNOW_S</li>
+					<li>WIND_W</li>
+					<li>PRESTRESSING_P</li>
+					<li>SETTLEMENT_U</li>
+					<li>TEMPERATURE_T</li>
+					<li>EARTHQUAKE_E</li>
+					<li>FIRE</li>
+					<li>IMPULSE</li>
+					<li>IMPACT</li>
+					<li>TRANSPORT</li>
+					<li>ERECTION</li>
+					<li>PROPPING</li>
+					<li>SYSTEM_IMPERFECTION</li>
+					<li>SHRINKAGE</li>
+					<li>CREEP</li>
+					<li>LACK_OF_FIT</li>
+					<li>BUOYANCY</li>
+					<li>ICE</li>
+					<li>CURRENT</li>
+					<li>WAVE</li>
+					<li>RAIN</li>
+					<li>BRAKES</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcActionTypeEnum</span>
+				<ol class="nested">
+					<li>PERMANENT_G</li>
+					<li>VARIABLE_Q</li>
+					<li>EXTRAORDINARY_A</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcActuatorTypeEnum</span>
+				<ol class="nested">
+					<li>ELECTRICACTUATOR</li>
+					<li>HANDOPERATEDACTUATOR</li>
+					<li>HYDRAULICACTUATOR</li>
+					<li>PNEUMATICACTUATOR</li>
+					<li>THERMOSTATICACTUATOR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcAddressTypeEnum</span>
+				<ol class="nested">
+					<li>OFFICE</li>
+					<li>SITE</li>
+					<li>HOME</li>
+					<li>DISTRIBUTIONPOINT</li>
+					<li>USERDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcAirTerminalBoxTypeEnum</span>
+				<ol class="nested">
+					<li>CONSTANTFLOW</li>
+					<li>VARIABLEFLOWPRESSUREDEPENDANT</li>
+					<li>VARIABLEFLOWPRESSUREINDEPENDANT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcAirTerminalTypeEnum</span>
+				<ol class="nested">
+					<li>DIFFUSER</li>
+					<li>GRILLE</li>
+					<li>LOUVRE</li>
+					<li>REGISTER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcAirToAirHeatRecoveryTypeEnum</span>
+				<ol class="nested">
+					<li>FIXEDPLATECOUNTERFLOWEXCHANGER</li>
+					<li>FIXEDPLATECROSSFLOWEXCHANGER</li>
+					<li>FIXEDPLATEPARALLELFLOWEXCHANGER</li>
+					<li>ROTARYWHEEL</li>
+					<li>RUNAROUNDCOILLOOP</li>
+					<li>HEATPIPE</li>
+					<li>TWINTOWERENTHALPYRECOVERYLOOPS</li>
+					<li>THERMOSIPHONSEALEDTUBEHEATEXCHANGERS</li>
+					<li>THERMOSIPHONCOILTYPEHEATEXCHANGERS</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcAlarmTypeEnum</span>
+				<ol class="nested">
+					<li>BELL</li>
+					<li>BREAKGLASSBUTTON</li>
+					<li>LIGHT</li>
+					<li>MANUALPULLBOX</li>
+					<li>SIREN</li>
+					<li>WHISTLE</li>
+					<li>RAILWAYCROCODILE</li>
+					<li>RAILWAYDETONATOR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcAlignmentCantSegmentTypeEnum</span>
+				<ol class="nested">
+					<li>CONSTANTCANT</li>
+					<li>LINEARTRANSITION</li>
+					<li>BIQUADRATICPARABOLA</li>
+					<li>BLOSSCURVE</li>
+					<li>COSINECURVE</li>
+					<li>SINECURVE</li>
+					<li>VIENNESEBEND</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcAlignmentHorizontalSegmentTypeEnum</span>
+				<ol class="nested">
+					<li>LINE</li>
+					<li>CIRCULARARC</li>
+					<li>CLOTHOID</li>
+					<li>CUBICSPIRAL</li>
+					<li>BIQUADRATICPARABOLA</li>
+					<li>BLOSSCURVE</li>
+					<li>COSINECURVE</li>
+					<li>SINECURVE</li>
+					<li>VIENNESEBEND</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcAlignmentTypeEnum</span>
+				<ol class="nested">
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcAlignmentVerticalSegmentTypeEnum</span>
+				<ol class="nested">
+					<li>CONSTANTGRADIENT</li>
+					<li>CIRCULARARC</li>
+					<li>PARABOLICARC</li>
+					<li>CLOTHOID</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcAnalysisModelTypeEnum</span>
+				<ol class="nested">
+					<li>IN_PLANE_LOADING_2D</li>
+					<li>OUT_PLANE_LOADING_2D</li>
+					<li>LOADING_3D</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcAnalysisTheoryTypeEnum</span>
+				<ol class="nested">
+					<li>FIRST_ORDER_THEORY</li>
+					<li>SECOND_ORDER_THEORY</li>
+					<li>THIRD_ORDER_THEORY</li>
+					<li>FULL_NONLINEAR_THEORY</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcAnnotationTypeEnum</span>
+				<ol class="nested">
+					<li>ASSUMEDPOINT</li>
+					<li>ASBUILTAREA</li>
+					<li>ASBUILTLINE</li>
+					<li>NON_PHYSICAL_SIGNAL</li>
+					<li>ASSUMEDLINE</li>
+					<li>WIDTHEVENT</li>
+					<li>ASSUMEDAREA</li>
+					<li>SUPERELEVATIONEVENT</li>
+					<li>ASBUILTPOINT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcArithmeticOperatorEnum</span>
+				<ol class="nested">
+					<li>ADD</li>
+					<li>DIVIDE</li>
+					<li>MULTIPLY</li>
+					<li>SUBTRACT</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcAssemblyPlaceEnum</span>
+				<ol class="nested">
+					<li>SITE</li>
+					<li>FACTORY</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcAudioVisualApplianceTypeEnum</span>
+				<ol class="nested">
+					<li>AMPLIFIER</li>
+					<li>CAMERA</li>
+					<li>DISPLAY</li>
+					<li>MICROPHONE</li>
+					<li>PLAYER</li>
+					<li>PROJECTOR</li>
+					<li>RECEIVER</li>
+					<li>SPEAKER</li>
+					<li>SWITCHER</li>
+					<li>TELEPHONE</li>
+					<li>TUNER</li>
+					<li>RAILWAY_COMMUNICATION_TERMINAL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcBSplineCurveForm</span>
+				<ol class="nested">
+					<li>POLYLINE_FORM</li>
+					<li>CIRCULAR_ARC</li>
+					<li>ELLIPTIC_ARC</li>
+					<li>PARABOLIC_ARC</li>
+					<li>HYPERBOLIC_ARC</li>
+					<li>UNSPECIFIED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcBSplineSurfaceForm</span>
+				<ol class="nested">
+					<li>PLANE_SURF</li>
+					<li>CYLINDRICAL_SURF</li>
+					<li>CONICAL_SURF</li>
+					<li>SPHERICAL_SURF</li>
+					<li>TOROIDAL_SURF</li>
+					<li>SURF_OF_REVOLUTION</li>
+					<li>RULED_SURF</li>
+					<li>GENERALISED_CONE</li>
+					<li>QUADRIC_SURF</li>
+					<li>SURF_OF_LINEAR_EXTRUSION</li>
+					<li>UNSPECIFIED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcBeamTypeEnum</span>
+				<ol class="nested">
+					<li>BEAM</li>
+					<li>JOIST</li>
+					<li>HOLLOWCORE</li>
+					<li>LINTEL</li>
+					<li>SPANDREL</li>
+					<li>T_BEAM</li>
+					<li>GIRDER_SEGMENT</li>
+					<li>DIAPHRAGM</li>
+					<li>PIERCAP</li>
+					<li>HATSTONE</li>
+					<li>CORNICE</li>
+					<li>EDGEBEAM</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcBearingTypeDisplacementEnum</span>
+				<ol class="nested">
+					<li>FIXED_MOVEMENT</li>
+					<li>GUIDED_LONGITUDINAL</li>
+					<li>GUIDED_TRANSVERSAL</li>
+					<li>FREE_MOVEMENT</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcBearingTypeEnum</span>
+				<ol class="nested">
+					<li>CYLINDRICAL</li>
+					<li>SPHERICAL</li>
+					<li>ELASTOMERIC</li>
+					<li>POT</li>
+					<li>GUIDE</li>
+					<li>ROCKER</li>
+					<li>ROLLER</li>
+					<li>DISK</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcBenchmarkEnum</span>
+				<ol class="nested">
+					<li>GREATERTHAN</li>
+					<li>GREATERTHANOREQUALTO</li>
+					<li>LESSTHAN</li>
+					<li>LESSTHANOREQUALTO</li>
+					<li>EQUALTO</li>
+					<li>NOTEQUALTO</li>
+					<li>INCLUDES</li>
+					<li>NOTINCLUDES</li>
+					<li>INCLUDEDIN</li>
+					<li>NOTINCLUDEDIN</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcBoilerTypeEnum</span>
+				<ol class="nested">
+					<li>WATER</li>
+					<li>STEAM</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcBooleanOperator</span>
+				<ol class="nested">
+					<li>UNION</li>
+					<li>INTERSECTION</li>
+					<li>DIFFERENCE</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcBridgePartTypeEnum</span>
+				<ol class="nested">
+					<li>ABUTMENT</li>
+					<li>DECK</li>
+					<li>DECK_SEGMENT</li>
+					<li>FOUNDATION</li>
+					<li>PIER</li>
+					<li>PIER_SEGMENT</li>
+					<li>PYLON</li>
+					<li>SUBSTRUCTURE</li>
+					<li>SUPERSTRUCTURE</li>
+					<li>SURFACESTRUCTURE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcBridgeTypeEnum</span>
+				<ol class="nested">
+					<li>ARCHED</li>
+					<li>CABLE_STAYED</li>
+					<li>CANTILEVER</li>
+					<li>CULVERT</li>
+					<li>FRAMEWORK</li>
+					<li>GIRDER</li>
+					<li>SUSPENSION</li>
+					<li>TRUSS</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcBuildingElementPartTypeEnum</span>
+				<ol class="nested">
+					<li>INSULATION</li>
+					<li>PRECASTPANEL</li>
+					<li>APRON</li>
+					<li>ARMOURUNIT</li>
+					<li>SAFETYCAGE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcBuildingElementProxyTypeEnum</span>
+				<ol class="nested">
+					<li>COMPLEX</li>
+					<li>ELEMENT</li>
+					<li>PARTIAL</li>
+					<li>PROVISIONFORVOID</li>
+					<li>PROVISIONFORSPACE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcBuildingSystemTypeEnum</span>
+				<ol class="nested">
+					<li>FENESTRATION</li>
+					<li>FOUNDATION</li>
+					<li>LOADBEARING</li>
+					<li>OUTERSHELL</li>
+					<li>SHADING</li>
+					<li>TRANSPORT</li>
+					<li>REINFORCING</li>
+					<li>PRESTRESSING</li>
+					<li>EROSIONPREVENTION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcBuiltSystemTypeEnum</span>
+				<ol class="nested">
+					<li>REINFORCING</li>
+					<li>MOORING</li>
+					<li>OUTERSHELL</li>
+					<li>TRACKCIRCUIT</li>
+					<li>EROSIONPREVENTION</li>
+					<li>FOUNDATION</li>
+					<li>LOADBEARING</li>
+					<li>SHADING</li>
+					<li>FENESTRATION</li>
+					<li>MOORINGSYSTEM</li>
+					<li>TRANSPORT</li>
+					<li>PRESTRESSING</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcBurnerTypeEnum</span>
+				<ol class="nested">
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCableCarrierFittingTypeEnum</span>
+				<ol class="nested">
+					<li>BEND</li>
+					<li>CROSS</li>
+					<li>REDUCER</li>
+					<li>TEE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCableCarrierSegmentTypeEnum</span>
+				<ol class="nested">
+					<li>CABLELADDERSEGMENT</li>
+					<li>CABLETRAYSEGMENT</li>
+					<li>CABLETRUNKINGSEGMENT</li>
+					<li>CONDUITSEGMENT</li>
+					<li>CABLEBRACKET</li>
+					<li>CATENARYWIRE</li>
+					<li>DROPPER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCableFittingTypeEnum</span>
+				<ol class="nested">
+					<li>CONNECTOR</li>
+					<li>ENTRY</li>
+					<li>EXIT</li>
+					<li>JUNCTION</li>
+					<li>TRANSITION</li>
+					<li>FANOUT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCableSegmentTypeEnum</span>
+				<ol class="nested">
+					<li>BUSBARSEGMENT</li>
+					<li>CABLESEGMENT</li>
+					<li>CONDUCTORSEGMENT</li>
+					<li>CORESEGMENT</li>
+					<li>CONTACTWIRESEGMENT</li>
+					<li>FIBERSEGMENT</li>
+					<li>FIBERTUBE</li>
+					<li>OPTICALCABLESEGMENT</li>
+					<li>STITCHWIRE</li>
+					<li>WIREPAIRSEGMENT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCaissonFoundationTypeEnum</span>
+				<ol class="nested">
+					<li>WELL</li>
+					<li>CAISSON</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcChangeActionEnum</span>
+				<ol class="nested">
+					<li>NOCHANGE</li>
+					<li>MODIFIED</li>
+					<li>ADDED</li>
+					<li>DELETED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcChillerTypeEnum</span>
+				<ol class="nested">
+					<li>AIRCOOLED</li>
+					<li>WATERCOOLED</li>
+					<li>HEATRECOVERY</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcChimneyTypeEnum</span>
+				<ol class="nested">
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCoilTypeEnum</span>
+				<ol class="nested">
+					<li>DXCOOLINGCOIL</li>
+					<li>ELECTRICHEATINGCOIL</li>
+					<li>GASHEATINGCOIL</li>
+					<li>HYDRONICCOIL</li>
+					<li>STEAMHEATINGCOIL</li>
+					<li>WATERCOOLINGCOIL</li>
+					<li>WATERHEATINGCOIL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcColumnTypeEnum</span>
+				<ol class="nested">
+					<li>COLUMN</li>
+					<li>PILASTER</li>
+					<li>PIERSTEM</li>
+					<li>PIERSTEM_SEGMENT</li>
+					<li>STANDCOLUMN</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCommunicationsApplianceTypeEnum</span>
+				<ol class="nested">
+					<li>ANTENNA</li>
+					<li>COMPUTER</li>
+					<li>FAX</li>
+					<li>GATEWAY</li>
+					<li>MODEM</li>
+					<li>NETWORKAPPLIANCE</li>
+					<li>NETWORKBRIDGE</li>
+					<li>NETWORKHUB</li>
+					<li>PRINTER</li>
+					<li>REPEATER</li>
+					<li>ROUTER</li>
+					<li>SCANNER</li>
+					<li>AUTOMATON</li>
+					<li>INTELLIGENT_PERIPHERAL</li>
+					<li>IP_NETWORK_EQUIPMENT</li>
+					<li>OPTICAL_NETWORK_UNIT</li>
+					<li>TELECOMMAND</li>
+					<li>TELEPHONYEXCHANGE</li>
+					<li>TRANSITIONCOMPONENT</li>
+					<li>TRANSPONDER</li>
+					<li>TRANSPORTEQUIPMENT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcComplexPropertyTemplateTypeEnum</span>
+				<ol class="nested">
+					<li>P_COMPLEX</li>
+					<li>Q_COMPLEX</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCompressorTypeEnum</span>
+				<ol class="nested">
+					<li>DYNAMIC</li>
+					<li>RECIPROCATING</li>
+					<li>ROTARY</li>
+					<li>SCROLL</li>
+					<li>TROCHOIDAL</li>
+					<li>SINGLESTAGE</li>
+					<li>BOOSTER</li>
+					<li>OPENTYPE</li>
+					<li>HERMETIC</li>
+					<li>SEMIHERMETIC</li>
+					<li>WELDEDSHELLHERMETIC</li>
+					<li>ROLLINGPISTON</li>
+					<li>ROTARYVANE</li>
+					<li>SINGLESCREW</li>
+					<li>TWINSCREW</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCondenserTypeEnum</span>
+				<ol class="nested">
+					<li>AIRCOOLED</li>
+					<li>EVAPORATIVECOOLED</li>
+					<li>WATERCOOLED</li>
+					<li>WATERCOOLEDBRAZEDPLATE</li>
+					<li>WATERCOOLEDSHELLCOIL</li>
+					<li>WATERCOOLEDSHELLTUBE</li>
+					<li>WATERCOOLEDTUBEINTUBE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcConnectionTypeEnum</span>
+				<ol class="nested">
+					<li>ATPATH</li>
+					<li>ATSTART</li>
+					<li>ATEND</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcConstraintEnum</span>
+				<ol class="nested">
+					<li>HARD</li>
+					<li>SOFT</li>
+					<li>ADVISORY</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcConstructionEquipmentResourceTypeEnum</span>
+				<ol class="nested">
+					<li>DEMOLISHING</li>
+					<li>EARTHMOVING</li>
+					<li>ERECTING</li>
+					<li>HEATING</li>
+					<li>LIGHTING</li>
+					<li>PAVING</li>
+					<li>PUMPING</li>
+					<li>TRANSPORTING</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcConstructionMaterialResourceTypeEnum</span>
+				<ol class="nested">
+					<li>AGGREGATES</li>
+					<li>CONCRETE</li>
+					<li>DRYWALL</li>
+					<li>FUEL</li>
+					<li>GYPSUM</li>
+					<li>MASONRY</li>
+					<li>METAL</li>
+					<li>PLASTIC</li>
+					<li>WOOD</li>
+					<li>NOTDEFINED</li>
+					<li>USERDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcConstructionProductResourceTypeEnum</span>
+				<ol class="nested">
+					<li>ASSEMBLY</li>
+					<li>FORMWORK</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcControllerTypeEnum</span>
+				<ol class="nested">
+					<li>FLOATING</li>
+					<li>PROGRAMMABLE</li>
+					<li>PROPORTIONAL</li>
+					<li>MULTIPOSITION</li>
+					<li>TWOPOSITION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcConveyorSegmentTypeEnum</span>
+				<ol class="nested">
+					<li>CHUTECONVEYOR</li>
+					<li>BELTCONVEYOR</li>
+					<li>SCREWCONVEYOR</li>
+					<li>BUCKETCONVEYOR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCooledBeamTypeEnum</span>
+				<ol class="nested">
+					<li>ACTIVE</li>
+					<li>PASSIVE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCoolingTowerTypeEnum</span>
+				<ol class="nested">
+					<li>NATURALDRAFT</li>
+					<li>MECHANICALINDUCEDDRAFT</li>
+					<li>MECHANICALFORCEDDRAFT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCostItemTypeEnum</span>
+				<ol class="nested">
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCostScheduleTypeEnum</span>
+				<ol class="nested">
+					<li>BUDGET</li>
+					<li>COSTPLAN</li>
+					<li>ESTIMATE</li>
+					<li>TENDER</li>
+					<li>PRICEDBILLOFQUANTITIES</li>
+					<li>UNPRICEDBILLOFQUANTITIES</li>
+					<li>SCHEDULEOFRATES</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCourseTypeEnum</span>
+				<ol class="nested">
+					<li>ARMOUR</li>
+					<li>FILTER</li>
+					<li>BALLASTBED</li>
+					<li>CORE</li>
+					<li>PAVEMENT</li>
+					<li>PROTECTION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCoveringTypeEnum</span>
+				<ol class="nested">
+					<li>CEILING</li>
+					<li>FLOORING</li>
+					<li>CLADDING</li>
+					<li>ROOFING</li>
+					<li>MOLDING</li>
+					<li>SKIRTINGBOARD</li>
+					<li>INSULATION</li>
+					<li>MEMBRANE</li>
+					<li>SLEEVING</li>
+					<li>WRAPPING</li>
+					<li>COPING</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCrewResourceTypeEnum</span>
+				<ol class="nested">
+					<li>OFFICE</li>
+					<li>SITE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCurtainWallTypeEnum</span>
+				<ol class="nested">
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcCurveInterpolationEnum</span>
+				<ol class="nested">
+					<li>LINEAR</li>
+					<li>LOG_LINEAR</li>
+					<li>LOG_LOG</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDamperTypeEnum</span>
+				<ol class="nested">
+					<li>BACKDRAFTDAMPER</li>
+					<li>BALANCINGDAMPER</li>
+					<li>BLASTDAMPER</li>
+					<li>CONTROLDAMPER</li>
+					<li>FIREDAMPER</li>
+					<li>FIRESMOKEDAMPER</li>
+					<li>FUMEHOODEXHAUST</li>
+					<li>GRAVITYDAMPER</li>
+					<li>GRAVITYRELIEFDAMPER</li>
+					<li>RELIEFDAMPER</li>
+					<li>SMOKEDAMPER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDataOriginEnum</span>
+				<ol class="nested">
+					<li>MEASURED</li>
+					<li>PREDICTED</li>
+					<li>SIMULATED</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDerivedUnitEnum</span>
+				<ol class="nested">
+					<li>ANGULARVELOCITYUNIT</li>
+					<li>AREADENSITYUNIT</li>
+					<li>COMPOUNDPLANEANGLEUNIT</li>
+					<li>DYNAMICVISCOSITYUNIT</li>
+					<li>HEATFLUXDENSITYUNIT</li>
+					<li>INTEGERCOUNTRATEUNIT</li>
+					<li>ISOTHERMALMOISTURECAPACITYUNIT</li>
+					<li>KINEMATICVISCOSITYUNIT</li>
+					<li>LINEARVELOCITYUNIT</li>
+					<li>MASSDENSITYUNIT</li>
+					<li>MASSFLOWRATEUNIT</li>
+					<li>MOISTUREDIFFUSIVITYUNIT</li>
+					<li>MOLECULARWEIGHTUNIT</li>
+					<li>SPECIFICHEATCAPACITYUNIT</li>
+					<li>THERMALADMITTANCEUNIT</li>
+					<li>THERMALCONDUCTANCEUNIT</li>
+					<li>THERMALRESISTANCEUNIT</li>
+					<li>THERMALTRANSMITTANCEUNIT</li>
+					<li>VAPORPERMEABILITYUNIT</li>
+					<li>VOLUMETRICFLOWRATEUNIT</li>
+					<li>ROTATIONALFREQUENCYUNIT</li>
+					<li>TORQUEUNIT</li>
+					<li>MOMENTOFINERTIAUNIT</li>
+					<li>LINEARMOMENTUNIT</li>
+					<li>LINEARFORCEUNIT</li>
+					<li>PLANARFORCEUNIT</li>
+					<li>MODULUSOFELASTICITYUNIT</li>
+					<li>SHEARMODULUSUNIT</li>
+					<li>LINEARSTIFFNESSUNIT</li>
+					<li>ROTATIONALSTIFFNESSUNIT</li>
+					<li>MODULUSOFSUBGRADEREACTIONUNIT</li>
+					<li>ACCELERATIONUNIT</li>
+					<li>CURVATUREUNIT</li>
+					<li>HEATINGVALUEUNIT</li>
+					<li>IONCONCENTRATIONUNIT</li>
+					<li>LUMINOUSINTENSITYDISTRIBUTIONUNIT</li>
+					<li>MASSPERLENGTHUNIT</li>
+					<li>MODULUSOFLINEARSUBGRADEREACTIONUNIT</li>
+					<li>MODULUSOFROTATIONALSUBGRADEREACTIONUNIT</li>
+					<li>PHUNIT</li>
+					<li>ROTATIONALMASSUNIT</li>
+					<li>SECTIONAREAINTEGRALUNIT</li>
+					<li>SECTIONMODULUSUNIT</li>
+					<li>SOUNDPOWERLEVELUNIT</li>
+					<li>SOUNDPOWERUNIT</li>
+					<li>SOUNDPRESSURELEVELUNIT</li>
+					<li>SOUNDPRESSUREUNIT</li>
+					<li>TEMPERATUREGRADIENTUNIT</li>
+					<li>TEMPERATURERATEOFCHANGEUNIT</li>
+					<li>THERMALEXPANSIONCOEFFICIENTUNIT</li>
+					<li>WARPINGCONSTANTUNIT</li>
+					<li>WARPINGMOMENTUNIT</li>
+					<li>USERDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDirectionSenseEnum</span>
+				<ol class="nested">
+					<li>POSITIVE</li>
+					<li>NEGATIVE</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDiscreteAccessoryTypeEnum</span>
+				<ol class="nested">
+					<li>ANCHORPLATE</li>
+					<li>BRACKET</li>
+					<li>SHOE</li>
+					<li>EXPANSION_JOINT_DEVICE</li>
+					<li>BIRDPROTECTION</li>
+					<li>CABLEARRANGER</li>
+					<li>INSULATOR</li>
+					<li>LOCK</li>
+					<li>TENSIONINGEQUIPMENT</li>
+					<li>RAILPAD</li>
+					<li>SLIDINGCHAIR</li>
+					<li>PANEL_STRENGTHENING</li>
+					<li>RAILBRACE</li>
+					<li>ELASTIC_CUSHION</li>
+					<li>SOUNDABSORPTION</li>
+					<li>RAIL_LUBRICATION</li>
+					<li>RAIL_MECHANICAL_EQUIPMENT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDistributionBoardTypeEnum</span>
+				<ol class="nested">
+					<li>SWITCHBOARD</li>
+					<li>CONSUMERUNIT</li>
+					<li>MOTORCONTROLCENTRE</li>
+					<li>DISTRIBUTIONFRAME</li>
+					<li>DISTRIBUTIONBOARD</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDistributionChamberElementTypeEnum</span>
+				<ol class="nested">
+					<li>FORMEDDUCT</li>
+					<li>INSPECTIONCHAMBER</li>
+					<li>INSPECTIONPIT</li>
+					<li>MANHOLE</li>
+					<li>METERCHAMBER</li>
+					<li>SUMP</li>
+					<li>TRENCH</li>
+					<li>VALVECHAMBER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDistributionPortTypeEnum</span>
+				<ol class="nested">
+					<li>CABLE</li>
+					<li>CABLECARRIER</li>
+					<li>DUCT</li>
+					<li>PIPE</li>
+					<li>WIRELESS</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDistributionSystemEnum</span>
+				<ol class="nested">
+					<li>AIRCONDITIONING</li>
+					<li>AUDIOVISUAL</li>
+					<li>CHEMICAL</li>
+					<li>CHILLEDWATER</li>
+					<li>COMMUNICATION</li>
+					<li>COMPRESSEDAIR</li>
+					<li>CONDENSERWATER</li>
+					<li>CONTROL</li>
+					<li>CONVEYING</li>
+					<li>DATA</li>
+					<li>DISPOSAL</li>
+					<li>DOMESTICCOLDWATER</li>
+					<li>DOMESTICHOTWATER</li>
+					<li>DRAINAGE</li>
+					<li>EARTHING</li>
+					<li>ELECTRICAL</li>
+					<li>ELECTROACOUSTIC</li>
+					<li>EXHAUST</li>
+					<li>FIREPROTECTION</li>
+					<li>FUEL</li>
+					<li>GAS</li>
+					<li>HAZARDOUS</li>
+					<li>HEATING</li>
+					<li>LIGHTING</li>
+					<li>LIGHTNINGPROTECTION</li>
+					<li>MUNICIPALSOLIDWASTE</li>
+					<li>OIL</li>
+					<li>OPERATIONAL</li>
+					<li>POWERGENERATION</li>
+					<li>RAINWATER</li>
+					<li>REFRIGERATION</li>
+					<li>SECURITY</li>
+					<li>SEWAGE</li>
+					<li>SIGNAL</li>
+					<li>STORMWATER</li>
+					<li>TELEPHONE</li>
+					<li>TV</li>
+					<li>VACUUM</li>
+					<li>VENT</li>
+					<li>VENTILATION</li>
+					<li>WASTEWATER</li>
+					<li>WATERSUPPLY</li>
+					<li>CATENARY_SYSTEM</li>
+					<li>OVERHEAD_CONTACTLINE_SYSTEM</li>
+					<li>RETURN_CIRCUIT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDocumentConfidentialityEnum</span>
+				<ol class="nested">
+					<li>PUBLIC</li>
+					<li>RESTRICTED</li>
+					<li>CONFIDENTIAL</li>
+					<li>PERSONAL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDocumentStatusEnum</span>
+				<ol class="nested">
+					<li>DRAFT</li>
+					<li>FINALDRAFT</li>
+					<li>FINAL</li>
+					<li>REVISION</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDoorPanelOperationEnum</span>
+				<ol class="nested">
+					<li>SWINGING</li>
+					<li>DOUBLE_ACTING</li>
+					<li>SLIDING</li>
+					<li>FOLDING</li>
+					<li>REVOLVING</li>
+					<li>ROLLINGUP</li>
+					<li>FIXEDPANEL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDoorPanelPositionEnum</span>
+				<ol class="nested">
+					<li>LEFT</li>
+					<li>MIDDLE</li>
+					<li>RIGHT</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDoorStyleConstructionEnum</span>
+				<ol class="nested">
+					<li>ALUMINIUM</li>
+					<li>HIGH_GRADE_STEEL</li>
+					<li>STEEL</li>
+					<li>WOOD</li>
+					<li>ALUMINIUM_WOOD</li>
+					<li>ALUMINIUM_PLASTIC</li>
+					<li>PLASTIC</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDoorStyleOperationEnum</span>
+				<ol class="nested">
+					<li>SINGLE_SWING_LEFT</li>
+					<li>SINGLE_SWING_RIGHT</li>
+					<li>DOUBLE_DOOR_SINGLE_SWING</li>
+					<li>DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT</li>
+					<li>DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT</li>
+					<li>DOUBLE_SWING_LEFT</li>
+					<li>DOUBLE_SWING_RIGHT</li>
+					<li>DOUBLE_DOOR_DOUBLE_SWING</li>
+					<li>SLIDING_TO_LEFT</li>
+					<li>SLIDING_TO_RIGHT</li>
+					<li>DOUBLE_DOOR_SLIDING</li>
+					<li>FOLDING_TO_LEFT</li>
+					<li>FOLDING_TO_RIGHT</li>
+					<li>DOUBLE_DOOR_FOLDING</li>
+					<li>REVOLVING</li>
+					<li>ROLLINGUP</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDoorTypeEnum</span>
+				<ol class="nested">
+					<li>DOOR</li>
+					<li>GATE</li>
+					<li>TRAPDOOR</li>
+					<li>BOOM_BARRIER</li>
+					<li>TURNSTILE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDoorTypeOperationEnum</span>
+				<ol class="nested">
+					<li>SINGLE_SWING_LEFT</li>
+					<li>SINGLE_SWING_RIGHT</li>
+					<li>DOUBLE_DOOR_SINGLE_SWING</li>
+					<li>DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_LEFT</li>
+					<li>DOUBLE_DOOR_SINGLE_SWING_OPPOSITE_RIGHT</li>
+					<li>DOUBLE_SWING_LEFT</li>
+					<li>DOUBLE_SWING_RIGHT</li>
+					<li>DOUBLE_DOOR_DOUBLE_SWING</li>
+					<li>SLIDING_TO_LEFT</li>
+					<li>SLIDING_TO_RIGHT</li>
+					<li>DOUBLE_DOOR_SLIDING</li>
+					<li>FOLDING_TO_LEFT</li>
+					<li>FOLDING_TO_RIGHT</li>
+					<li>DOUBLE_DOOR_FOLDING</li>
+					<li>REVOLVING</li>
+					<li>ROLLINGUP</li>
+					<li>SWING_FIXED_LEFT</li>
+					<li>SWING_FIXED_RIGHT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDuctFittingTypeEnum</span>
+				<ol class="nested">
+					<li>BEND</li>
+					<li>CONNECTOR</li>
+					<li>ENTRY</li>
+					<li>EXIT</li>
+					<li>JUNCTION</li>
+					<li>OBSTRUCTION</li>
+					<li>TRANSITION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDuctSegmentTypeEnum</span>
+				<ol class="nested">
+					<li>RIGIDSEGMENT</li>
+					<li>FLEXIBLESEGMENT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcDuctSilencerTypeEnum</span>
+				<ol class="nested">
+					<li>FLATOVAL</li>
+					<li>RECTANGULAR</li>
+					<li>ROUND</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcEarthworksCutTypeEnum</span>
+				<ol class="nested">
+					<li>TRENCH</li>
+					<li>DREDGING</li>
+					<li>EXCAVATION</li>
+					<li>OVEREXCAVATION</li>
+					<li>TOPSOILREMOVAL</li>
+					<li>STEPEXCAVATION</li>
+					<li>PAVEMENTMILLING</li>
+					<li>CUT</li>
+					<li>BASE_EXCAVATION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcEarthworksFillTypeEnum</span>
+				<ol class="nested">
+					<li>BACKFILL</li>
+					<li>COUNTERWEIGHT</li>
+					<li>SUBGRADE</li>
+					<li>EMBANKMENT</li>
+					<li>TRANSITIONSECTION</li>
+					<li>SUBGRADEBED</li>
+					<li>SLOPEFILL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcElectricApplianceTypeEnum</span>
+				<ol class="nested">
+					<li>DISHWASHER</li>
+					<li>ELECTRICCOOKER</li>
+					<li>FREESTANDINGELECTRICHEATER</li>
+					<li>FREESTANDINGFAN</li>
+					<li>FREESTANDINGWATERHEATER</li>
+					<li>FREESTANDINGWATERCOOLER</li>
+					<li>FREEZER</li>
+					<li>FRIDGE_FREEZER</li>
+					<li>HANDDRYER</li>
+					<li>KITCHENMACHINE</li>
+					<li>MICROWAVE</li>
+					<li>PHOTOCOPIER</li>
+					<li>REFRIGERATOR</li>
+					<li>TUMBLEDRYER</li>
+					<li>VENDINGMACHINE</li>
+					<li>WASHINGMACHINE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcElectricDistributionBoardTypeEnum</span>
+				<ol class="nested">
+					<li>CONSUMERUNIT</li>
+					<li>DISTRIBUTIONBOARD</li>
+					<li>MOTORCONTROLCENTRE</li>
+					<li>SWITCHBOARD</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcElectricFlowStorageDeviceTypeEnum</span>
+				<ol class="nested">
+					<li>BATTERY</li>
+					<li>CAPACITORBANK</li>
+					<li>HARMONICFILTER</li>
+					<li>INDUCTORBANK</li>
+					<li>UPS</li>
+					<li>CAPACITOR</li>
+					<li>COMPENSATOR</li>
+					<li>INDUCTOR</li>
+					<li>RECHARGER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcElectricFlowTreatmentDeviceTypeEnum</span>
+				<ol class="nested">
+					<li>ELECTRONICFILTER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcElectricGeneratorTypeEnum</span>
+				<ol class="nested">
+					<li>CHP</li>
+					<li>ENGINEGENERATOR</li>
+					<li>STANDALONE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcElectricMotorTypeEnum</span>
+				<ol class="nested">
+					<li>DC</li>
+					<li>INDUCTION</li>
+					<li>POLYPHASE</li>
+					<li>RELUCTANCESYNCHRONOUS</li>
+					<li>SYNCHRONOUS</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcElectricTimeControlTypeEnum</span>
+				<ol class="nested">
+					<li>TIMECLOCK</li>
+					<li>TIMEDELAY</li>
+					<li>RELAY</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcElementAssemblyTypeEnum</span>
+				<ol class="nested">
+					<li>ACCESSORY_ASSEMBLY</li>
+					<li>ARCH</li>
+					<li>BEAM_GRID</li>
+					<li>BRACED_FRAME</li>
+					<li>GIRDER</li>
+					<li>REINFORCEMENT_UNIT</li>
+					<li>RIGID_FRAME</li>
+					<li>SLAB_FIELD</li>
+					<li>TRUSS</li>
+					<li>ABUTMENT</li>
+					<li>PIER</li>
+					<li>PYLON</li>
+					<li>CROSS_BRACING</li>
+					<li>DECK</li>
+					<li>MAST</li>
+					<li>SIGNALASSEMBLY</li>
+					<li>GRID</li>
+					<li>SHELTER</li>
+					<li>SUPPORTINGASSEMBLY</li>
+					<li>SUSPENSIONASSEMBLY</li>
+					<li>TRACTION_SWITCHING_ASSEMBLY</li>
+					<li>TRACKPANEL</li>
+					<li>TURNOUTPANEL</li>
+					<li>DILATATIONPANEL</li>
+					<li>RAIL_MECHANICAL_EQUIPMENT_ASSEMBLY</li>
+					<li>ENTRANCEWORKS</li>
+					<li>SUMPBUSTER</li>
+					<li>TRAFFIC_CALMING_DEVICE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcElementCompositionEnum</span>
+				<ol class="nested">
+					<li>COMPLEX</li>
+					<li>ELEMENT</li>
+					<li>PARTIAL</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcEngineTypeEnum</span>
+				<ol class="nested">
+					<li>EXTERNALCOMBUSTION</li>
+					<li>INTERNALCOMBUSTION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcEvaporativeCoolerTypeEnum</span>
+				<ol class="nested">
+					<li>DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER</li>
+					<li>DIRECTEVAPORATIVERIGIDMEDIAAIRCOOLER</li>
+					<li>DIRECTEVAPORATIVESLINGERSPACKAGEDAIRCOOLER</li>
+					<li>DIRECTEVAPORATIVEPACKAGEDROTARYAIRCOOLER</li>
+					<li>DIRECTEVAPORATIVEAIRWASHER</li>
+					<li>INDIRECTEVAPORATIVEPACKAGEAIRCOOLER</li>
+					<li>INDIRECTEVAPORATIVEWETCOIL</li>
+					<li>INDIRECTEVAPORATIVECOOLINGTOWERORCOILCOOLER</li>
+					<li>INDIRECTDIRECTCOMBINATION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcEvaporatorTypeEnum</span>
+				<ol class="nested">
+					<li>DIRECTEXPANSION</li>
+					<li>DIRECTEXPANSIONSHELLANDTUBE</li>
+					<li>DIRECTEXPANSIONTUBEINTUBE</li>
+					<li>DIRECTEXPANSIONBRAZEDPLATE</li>
+					<li>FLOODEDSHELLANDTUBE</li>
+					<li>SHELLANDCOIL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcEventTriggerTypeEnum</span>
+				<ol class="nested">
+					<li>EVENTRULE</li>
+					<li>EVENTMESSAGE</li>
+					<li>EVENTTIME</li>
+					<li>EVENTCOMPLEX</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcEventTypeEnum</span>
+				<ol class="nested">
+					<li>STARTEVENT</li>
+					<li>ENDEVENT</li>
+					<li>INTERMEDIATEEVENT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcExternalSpatialElementTypeEnum</span>
+				<ol class="nested">
+					<li>EXTERNAL</li>
+					<li>EXTERNAL_EARTH</li>
+					<li>EXTERNAL_WATER</li>
+					<li>EXTERNAL_FIRE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcFacilityPartCommonTypeEnum</span>
+				<ol class="nested">
+					<li>SEGMENT</li>
+					<li>ABOVEGROUND</li>
+					<li>JUNCTION</li>
+					<li>LEVELCROSSING</li>
+					<li>BELOWGROUND</li>
+					<li>SUBSTRUCTURE</li>
+					<li>TERMINAL</li>
+					<li>SUPERSTRUCTURE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcFacilityUsageEnum</span>
+				<ol class="nested">
+					<li>LATERAL</li>
+					<li>REGION</li>
+					<li>VERTICAL</li>
+					<li>LONGITUDINAL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcFanTypeEnum</span>
+				<ol class="nested">
+					<li>CENTRIFUGALFORWARDCURVED</li>
+					<li>CENTRIFUGALRADIAL</li>
+					<li>CENTRIFUGALBACKWARDINCLINEDCURVED</li>
+					<li>CENTRIFUGALAIRFOIL</li>
+					<li>TUBEAXIAL</li>
+					<li>VANEAXIAL</li>
+					<li>PROPELLORAXIAL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcFastenerTypeEnum</span>
+				<ol class="nested">
+					<li>GLUE</li>
+					<li>MORTAR</li>
+					<li>WELD</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcFilterTypeEnum</span>
+				<ol class="nested">
+					<li>AIRPARTICLEFILTER</li>
+					<li>COMPRESSEDAIRFILTER</li>
+					<li>ODORFILTER</li>
+					<li>OILFILTER</li>
+					<li>STRAINER</li>
+					<li>WATERFILTER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcFireSuppressionTerminalTypeEnum</span>
+				<ol class="nested">
+					<li>BREECHINGINLET</li>
+					<li>FIREHYDRANT</li>
+					<li>HOSEREEL</li>
+					<li>SPRINKLER</li>
+					<li>SPRINKLERDEFLECTOR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcFlowDirectionEnum</span>
+				<ol class="nested">
+					<li>SOURCE</li>
+					<li>SINK</li>
+					<li>SOURCEANDSINK</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcFlowInstrumentTypeEnum</span>
+				<ol class="nested">
+					<li>PRESSUREGAUGE</li>
+					<li>THERMOMETER</li>
+					<li>AMMETER</li>
+					<li>FREQUENCYMETER</li>
+					<li>POWERFACTORMETER</li>
+					<li>PHASEANGLEMETER</li>
+					<li>VOLTMETER_PEAK</li>
+					<li>VOLTMETER_RMS</li>
+					<li>COMBINED</li>
+					<li>VOLTMETER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcFlowMeterTypeEnum</span>
+				<ol class="nested">
+					<li>ENERGYMETER</li>
+					<li>GASMETER</li>
+					<li>OILMETER</li>
+					<li>WATERMETER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcFootingTypeEnum</span>
+				<ol class="nested">
+					<li>CAISSON_FOUNDATION</li>
+					<li>FOOTING_BEAM</li>
+					<li>PAD_FOOTING</li>
+					<li>PILE_CAP</li>
+					<li>STRIP_FOOTING</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcFurnitureTypeEnum</span>
+				<ol class="nested">
+					<li>CHAIR</li>
+					<li>TABLE</li>
+					<li>DESK</li>
+					<li>BED</li>
+					<li>FILECABINET</li>
+					<li>SHELF</li>
+					<li>SOFA</li>
+					<li>TECHNICALCABINET</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcGeographicElementTypeEnum</span>
+				<ol class="nested">
+					<li>TERRAIN</li>
+					<li>SOIL_BORING_POINT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcGeometricProjectionEnum</span>
+				<ol class="nested">
+					<li>GRAPH_VIEW</li>
+					<li>SKETCH_VIEW</li>
+					<li>MODEL_VIEW</li>
+					<li>PLAN_VIEW</li>
+					<li>REFLECTED_PLAN_VIEW</li>
+					<li>SECTION_VIEW</li>
+					<li>ELEVATION_VIEW</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcGlobalOrLocalEnum</span>
+				<ol class="nested">
+					<li>GLOBAL_COORDS</li>
+					<li>LOCAL_COORDS</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcGridTypeEnum</span>
+				<ol class="nested">
+					<li>RECTANGULAR</li>
+					<li>RADIAL</li>
+					<li>TRIANGULAR</li>
+					<li>IRREGULAR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcHeatExchangerTypeEnum</span>
+				<ol class="nested">
+					<li>PLATE</li>
+					<li>SHELLANDTUBE</li>
+					<li>TURNOUTHEATING</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcHumidifierTypeEnum</span>
+				<ol class="nested">
+					<li>STEAMINJECTION</li>
+					<li>ADIABATICAIRWASHER</li>
+					<li>ADIABATICPAN</li>
+					<li>ADIABATICWETTEDELEMENT</li>
+					<li>ADIABATICATOMIZING</li>
+					<li>ADIABATICULTRASONIC</li>
+					<li>ADIABATICRIGIDMEDIA</li>
+					<li>ADIABATICCOMPRESSEDAIRNOZZLE</li>
+					<li>ASSISTEDELECTRIC</li>
+					<li>ASSISTEDNATURALGAS</li>
+					<li>ASSISTEDPROPANE</li>
+					<li>ASSISTEDBUTANE</li>
+					<li>ASSISTEDSTEAM</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcImpactProtectionDeviceTypeEnum</span>
+				<ol class="nested">
+					<li>CRASHCUSHION</li>
+					<li>DAMPINGSYSTEM</li>
+					<li>FENDER</li>
+					<li>BUMPER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcInterceptorTypeEnum</span>
+				<ol class="nested">
+					<li>CYCLONIC</li>
+					<li>GREASE</li>
+					<li>OIL</li>
+					<li>PETROL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcInternalOrExternalEnum</span>
+				<ol class="nested">
+					<li>INTERNAL</li>
+					<li>EXTERNAL</li>
+					<li>EXTERNAL_EARTH</li>
+					<li>EXTERNAL_WATER</li>
+					<li>EXTERNAL_FIRE</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcInventoryTypeEnum</span>
+				<ol class="nested">
+					<li>ASSETINVENTORY</li>
+					<li>SPACEINVENTORY</li>
+					<li>FURNITUREINVENTORY</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcJunctionBoxTypeEnum</span>
+				<ol class="nested">
+					<li>DATA</li>
+					<li>POWER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcKnotType</span>
+				<ol class="nested">
+					<li>UNIFORM_KNOTS</li>
+					<li>QUASI_UNIFORM_KNOTS</li>
+					<li>PIECEWISE_BEZIER_KNOTS</li>
+					<li>UNSPECIFIED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcLaborResourceTypeEnum</span>
+				<ol class="nested">
+					<li>ADMINISTRATION</li>
+					<li>CARPENTRY</li>
+					<li>CLEANING</li>
+					<li>CONCRETE</li>
+					<li>DRYWALL</li>
+					<li>ELECTRIC</li>
+					<li>FINISHING</li>
+					<li>FLOORING</li>
+					<li>GENERAL</li>
+					<li>HVAC</li>
+					<li>LANDSCAPING</li>
+					<li>MASONRY</li>
+					<li>PAINTING</li>
+					<li>PAVING</li>
+					<li>PLUMBING</li>
+					<li>ROOFING</li>
+					<li>SITEGRADING</li>
+					<li>STEELWORK</li>
+					<li>SURVEYING</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcLampTypeEnum</span>
+				<ol class="nested">
+					<li>COMPACTFLUORESCENT</li>
+					<li>FLUORESCENT</li>
+					<li>HALOGEN</li>
+					<li>HIGHPRESSUREMERCURY</li>
+					<li>HIGHPRESSURESODIUM</li>
+					<li>LED</li>
+					<li>METALHALIDE</li>
+					<li>OLED</li>
+					<li>TUNGSTENFILAMENT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcLayerSetDirectionEnum</span>
+				<ol class="nested">
+					<li>AXIS1</li>
+					<li>AXIS2</li>
+					<li>AXIS3</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcLightDistributionCurveEnum</span>
+				<ol class="nested">
+					<li>TYPE_A</li>
+					<li>TYPE_B</li>
+					<li>TYPE_C</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcLightEmissionSourceEnum</span>
+				<ol class="nested">
+					<li>COMPACTFLUORESCENT</li>
+					<li>FLUORESCENT</li>
+					<li>HIGHPRESSUREMERCURY</li>
+					<li>HIGHPRESSURESODIUM</li>
+					<li>LIGHTEMITTINGDIODE</li>
+					<li>LOWPRESSURESODIUM</li>
+					<li>LOWVOLTAGEHALOGEN</li>
+					<li>MAINVOLTAGEHALOGEN</li>
+					<li>METALHALIDE</li>
+					<li>TUNGSTENFILAMENT</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcLightFixtureTypeEnum</span>
+				<ol class="nested">
+					<li>POINTSOURCE</li>
+					<li>DIRECTIONSOURCE</li>
+					<li>SECURITYLIGHTING</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcLiquidTerminalTypeEnum</span>
+				<ol class="nested">
+					<li>LOADINGARM</li>
+					<li>HOSEREEL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcLoadGroupTypeEnum</span>
+				<ol class="nested">
+					<li>LOAD_GROUP</li>
+					<li>LOAD_CASE</li>
+					<li>LOAD_COMBINATION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcLogicalOperatorEnum</span>
+				<ol class="nested">
+					<li>LOGICALAND</li>
+					<li>LOGICALOR</li>
+					<li>LOGICALXOR</li>
+					<li>LOGICALNOTAND</li>
+					<li>LOGICALNOTOR</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcMarineFacilityTypeEnum</span>
+				<ol class="nested">
+					<li>CANAL</li>
+					<li>WATERWAYSHIPLIFT</li>
+					<li>EMBANKMENT</li>
+					<li>LAUNCHRECOVERY</li>
+					<li>MARINEDEFENCE</li>
+					<li>HYDROLIFT</li>
+					<li>SHIPYARD</li>
+					<li>SHIPLIFT</li>
+					<li>PORT</li>
+					<li>QUAY</li>
+					<li>FLOATINGDOCK</li>
+					<li>NAVIGATIONALCHANNEL</li>
+					<li>BREAKWATER</li>
+					<li>DRYDOCK</li>
+					<li>JETTY</li>
+					<li>SHIPLOCK</li>
+					<li>BARRIERBEACH</li>
+					<li>SLIPWAY</li>
+					<li>WATERWAY</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcMarinePartTypeEnum</span>
+				<ol class="nested">
+					<li>CREST</li>
+					<li>MANUFACTURING</li>
+					<li>LOWWATERLINE</li>
+					<li>CORE</li>
+					<li>WATERFIELD</li>
+					<li>CILL_LEVEL</li>
+					<li>BERTHINGSTRUCTURE</li>
+					<li>COPELEVEL</li>
+					<li>CHAMBER</li>
+					<li>STORAGE</li>
+					<li>APPROACHCHANNEL</li>
+					<li>VEHICLESERVICING</li>
+					<li>SHIPTRANSFER</li>
+					<li>GATEHEAD</li>
+					<li>GUDINGSTRUCTURE</li>
+					<li>BELOWWATERLINE</li>
+					<li>WEATHERSIDE</li>
+					<li>LANDFIELD</li>
+					<li>PROTECTION</li>
+					<li>LEEWARDSIDE</li>
+					<li>ABOVEWATERLINE</li>
+					<li>ANCHORAGE</li>
+					<li>NAVIGATIONALAREA</li>
+					<li>HIGHWATERLINE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcMechanicalFastenerTypeEnum</span>
+				<ol class="nested">
+					<li>ANCHORBOLT</li>
+					<li>BOLT</li>
+					<li>DOWEL</li>
+					<li>NAIL</li>
+					<li>NAILPLATE</li>
+					<li>RIVET</li>
+					<li>SCREW</li>
+					<li>SHEARCONNECTOR</li>
+					<li>STAPLE</li>
+					<li>STUDSHEARCONNECTOR</li>
+					<li>COUPLER</li>
+					<li>RAILJOINT</li>
+					<li>RAILFASTENING</li>
+					<li>CHAIN</li>
+					<li>ROPE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcMedicalDeviceTypeEnum</span>
+				<ol class="nested">
+					<li>AIRSTATION</li>
+					<li>FEEDAIRUNIT</li>
+					<li>OXYGENGENERATOR</li>
+					<li>OXYGENPLANT</li>
+					<li>VACUUMSTATION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcMemberTypeEnum</span>
+				<ol class="nested">
+					<li>BRACE</li>
+					<li>CHORD</li>
+					<li>COLLAR</li>
+					<li>MEMBER</li>
+					<li>MULLION</li>
+					<li>PLATE</li>
+					<li>POST</li>
+					<li>PURLIN</li>
+					<li>RAFTER</li>
+					<li>STRINGER</li>
+					<li>STRUT</li>
+					<li>STUD</li>
+					<li>STIFFENING_RIB</li>
+					<li>ARCH_SEGMENT</li>
+					<li>SUSPENSION_CABLE</li>
+					<li>SUSPENDER</li>
+					<li>STAY_CABLE</li>
+					<li>STRUCTURALCABLE</li>
+					<li>TIEBAR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcMobileTelecommunicationsApplianceTypeEnum</span>
+				<ol class="nested">
+					<li>E_UTRAN_NODE_B</li>
+					<li>REMOTE_RADIO_UNIT</li>
+					<li>ACCESSPOINT</li>
+					<li>BASETRANSCEIVERSTATION</li>
+					<li>REMOTEUNIT</li>
+					<li>BASEBANDUNIT</li>
+					<li>MASTERUNIT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcMooringDeviceTypeEnum</span>
+				<ol class="nested">
+					<li>LINETENSIONER</li>
+					<li>MAGNETICDEVICE</li>
+					<li>MOORINGHOOKS</li>
+					<li>VACUUMDEVICE</li>
+					<li>BOLLARD</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcMotorConnectionTypeEnum</span>
+				<ol class="nested">
+					<li>BELTDRIVE</li>
+					<li>COUPLING</li>
+					<li>DIRECTDRIVE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcNavigationElementTypeEnum</span>
+				<ol class="nested">
+					<li>BEACON</li>
+					<li>BUOY</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcNullStyle</span>
+				<ol class="nested">
+					<li>NULL</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcObjectTypeEnum</span>
+				<ol class="nested">
+					<li>PRODUCT</li>
+					<li>PROCESS</li>
+					<li>CONTROL</li>
+					<li>RESOURCE</li>
+					<li>ACTOR</li>
+					<li>GROUP</li>
+					<li>PROJECT</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcObjectiveEnum</span>
+				<ol class="nested">
+					<li>CODECOMPLIANCE</li>
+					<li>CODEWAIVER</li>
+					<li>DESIGNINTENT</li>
+					<li>EXTERNAL</li>
+					<li>HEALTHANDSAFETY</li>
+					<li>MERGECONFLICT</li>
+					<li>MODELVIEW</li>
+					<li>PARAMETER</li>
+					<li>REQUIREMENT</li>
+					<li>SPECIFICATION</li>
+					<li>TRIGGERCONDITION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcOccupantTypeEnum</span>
+				<ol class="nested">
+					<li>ASSIGNEE</li>
+					<li>ASSIGNOR</li>
+					<li>LESSEE</li>
+					<li>LESSOR</li>
+					<li>LETTINGAGENT</li>
+					<li>OWNER</li>
+					<li>TENANT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcOpeningElementTypeEnum</span>
+				<ol class="nested">
+					<li>OPENING</li>
+					<li>RECESS</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcOutletTypeEnum</span>
+				<ol class="nested">
+					<li>AUDIOVISUALOUTLET</li>
+					<li>COMMUNICATIONSOUTLET</li>
+					<li>POWEROUTLET</li>
+					<li>DATAOUTLET</li>
+					<li>TELEPHONEOUTLET</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcPerformanceHistoryTypeEnum</span>
+				<ol class="nested">
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcPermeableCoveringOperationEnum</span>
+				<ol class="nested">
+					<li>GRILL</li>
+					<li>LOUVER</li>
+					<li>SCREEN</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcPermitTypeEnum</span>
+				<ol class="nested">
+					<li>ACCESS</li>
+					<li>BUILDING</li>
+					<li>WORK</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcPhysicalOrVirtualEnum</span>
+				<ol class="nested">
+					<li>PHYSICAL</li>
+					<li>VIRTUAL</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcPileConstructionEnum</span>
+				<ol class="nested">
+					<li>CAST_IN_PLACE</li>
+					<li>COMPOSITE</li>
+					<li>PRECAST_CONCRETE</li>
+					<li>PREFAB_STEEL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcPileTypeEnum</span>
+				<ol class="nested">
+					<li>BORED</li>
+					<li>DRIVEN</li>
+					<li>JETGROUTING</li>
+					<li>COHESION</li>
+					<li>FRICTION</li>
+					<li>SUPPORT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcPipeFittingTypeEnum</span>
+				<ol class="nested">
+					<li>BEND</li>
+					<li>CONNECTOR</li>
+					<li>ENTRY</li>
+					<li>EXIT</li>
+					<li>JUNCTION</li>
+					<li>OBSTRUCTION</li>
+					<li>TRANSITION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcPipeSegmentTypeEnum</span>
+				<ol class="nested">
+					<li>CULVERT</li>
+					<li>FLEXIBLESEGMENT</li>
+					<li>RIGIDSEGMENT</li>
+					<li>GUTTER</li>
+					<li>SPOOL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcPlateTypeEnum</span>
+				<ol class="nested">
+					<li>CURTAIN_PANEL</li>
+					<li>SHEET</li>
+					<li>FLANGE_PLATE</li>
+					<li>WEB_PLATE</li>
+					<li>STIFFENER_PLATE</li>
+					<li>GUSSET_PLATE</li>
+					<li>COVER_PLATE</li>
+					<li>SPLICE_PLATE</li>
+					<li>BASE_PLATE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcPreferredSurfaceCurveRepresentation</span>
+				<ol class="nested">
+					<li>CURVE3D</li>
+					<li>PCURVE_S1</li>
+					<li>PCURVE_S2</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcProcedureTypeEnum</span>
+				<ol class="nested">
+					<li>ADVICE_CAUTION</li>
+					<li>ADVICE_NOTE</li>
+					<li>ADVICE_WARNING</li>
+					<li>CALIBRATION</li>
+					<li>DIAGNOSTIC</li>
+					<li>SHUTDOWN</li>
+					<li>STARTUP</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcProfileTypeEnum</span>
+				<ol class="nested">
+					<li>CURVE</li>
+					<li>AREA</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcProjectOrderTypeEnum</span>
+				<ol class="nested">
+					<li>CHANGEORDER</li>
+					<li>MAINTENANCEWORKORDER</li>
+					<li>MOVEORDER</li>
+					<li>PURCHASEORDER</li>
+					<li>WORKORDER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcProjectedOrTrueLengthEnum</span>
+				<ol class="nested">
+					<li>PROJECTED_LENGTH</li>
+					<li>TRUE_LENGTH</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcProjectionElementTypeEnum</span>
+				<ol class="nested">
+					<li>BLISTER</li>
+					<li>DEVIATOR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcPropertySetTemplateTypeEnum</span>
+				<ol class="nested">
+					<li>PSET_TYPEDRIVENONLY</li>
+					<li>PSET_TYPEDRIVENOVERRIDE</li>
+					<li>PSET_OCCURRENCEDRIVEN</li>
+					<li>PSET_PERFORMANCEDRIVEN</li>
+					<li>QTO_TYPEDRIVENONLY</li>
+					<li>QTO_TYPEDRIVENOVERRIDE</li>
+					<li>QTO_OCCURRENCEDRIVEN</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcProtectiveDeviceTrippingUnitTypeEnum</span>
+				<ol class="nested">
+					<li>ELECTRONIC</li>
+					<li>ELECTROMAGNETIC</li>
+					<li>RESIDUALCURRENT</li>
+					<li>THERMAL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcProtectiveDeviceTypeEnum</span>
+				<ol class="nested">
+					<li>CIRCUITBREAKER</li>
+					<li>EARTHLEAKAGECIRCUITBREAKER</li>
+					<li>EARTHINGSWITCH</li>
+					<li>FUSEDISCONNECTOR</li>
+					<li>RESIDUALCURRENTCIRCUITBREAKER</li>
+					<li>RESIDUALCURRENTSWITCH</li>
+					<li>VARISTOR</li>
+					<li>ANTI_ARCING_DEVICE</li>
+					<li>SPARKGAP</li>
+					<li>VOLTAGELIMITER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcPumpTypeEnum</span>
+				<ol class="nested">
+					<li>CIRCULATOR</li>
+					<li>ENDSUCTION</li>
+					<li>SPLITCASE</li>
+					<li>SUBMERSIBLEPUMP</li>
+					<li>SUMPPUMP</li>
+					<li>VERTICALINLINE</li>
+					<li>VERTICALTURBINE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcRailTypeEnum</span>
+				<ol class="nested">
+					<li>RACKRAIL</li>
+					<li>BLADE</li>
+					<li>GUARDRAIL</li>
+					<li>STOCKRAIL</li>
+					<li>CHECKRAIL</li>
+					<li>RAIL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcRailingTypeEnum</span>
+				<ol class="nested">
+					<li>HANDRAIL</li>
+					<li>GUARDRAIL</li>
+					<li>BALUSTRADE</li>
+					<li>FENCE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcRailwayPartTypeEnum</span>
+				<ol class="nested">
+					<li>TRACKSTRUCTURE</li>
+					<li>TRACKSTRUCTUREPART</li>
+					<li>LINESIDESTRUCTUREPART</li>
+					<li>DILATATIONSUPERSTRUCTURE</li>
+					<li>PLAINTRACKSUPESTRUCTURE</li>
+					<li>LINESIDESTRUCTURE</li>
+					<li>SUPERSTRUCTURE</li>
+					<li>TURNOUTSUPERSTRUCTURE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcRampFlightTypeEnum</span>
+				<ol class="nested">
+					<li>STRAIGHT</li>
+					<li>SPIRAL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcRampTypeEnum</span>
+				<ol class="nested">
+					<li>STRAIGHT_RUN_RAMP</li>
+					<li>TWO_STRAIGHT_RUN_RAMP</li>
+					<li>QUARTER_TURN_RAMP</li>
+					<li>TWO_QUARTER_TURN_RAMP</li>
+					<li>HALF_TURN_RAMP</li>
+					<li>SPIRAL_RAMP</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcRecurrenceTypeEnum</span>
+				<ol class="nested">
+					<li>DAILY</li>
+					<li>WEEKLY</li>
+					<li>MONTHLY_BY_DAY_OF_MONTH</li>
+					<li>MONTHLY_BY_POSITION</li>
+					<li>BY_DAY_COUNT</li>
+					<li>BY_WEEKDAY_COUNT</li>
+					<li>YEARLY_BY_DAY_OF_MONTH</li>
+					<li>YEARLY_BY_POSITION</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcReferentTypeEnum</span>
+				<ol class="nested">
+					<li>KILOPOINT</li>
+					<li>MILEPOINT</li>
+					<li>STATION</li>
+					<li>REFERENCEMARKER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcReflectanceMethodEnum</span>
+				<ol class="nested">
+					<li>BLINN</li>
+					<li>FLAT</li>
+					<li>GLASS</li>
+					<li>MATT</li>
+					<li>METAL</li>
+					<li>MIRROR</li>
+					<li>PHONG</li>
+					<li>PLASTIC</li>
+					<li>STRAUSS</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcReinforcedSoilTypeEnum</span>
+				<ol class="nested">
+					<li>SURCHARGEPRELOADED</li>
+					<li>VERTICALLYDRAINED</li>
+					<li>DYNAMICALLYCOMPACTED</li>
+					<li>REPLACED</li>
+					<li>ROLLERCOMPACTED</li>
+					<li>GROUTED</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcReinforcingBarRoleEnum</span>
+				<ol class="nested">
+					<li>MAIN</li>
+					<li>SHEAR</li>
+					<li>LIGATURE</li>
+					<li>STUD</li>
+					<li>PUNCHING</li>
+					<li>EDGE</li>
+					<li>RING</li>
+					<li>ANCHORING</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcReinforcingBarSurfaceEnum</span>
+				<ol class="nested">
+					<li>PLAIN</li>
+					<li>TEXTURED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcReinforcingBarTypeEnum</span>
+				<ol class="nested">
+					<li>ANCHORING</li>
+					<li>EDGE</li>
+					<li>LIGATURE</li>
+					<li>MAIN</li>
+					<li>PUNCHING</li>
+					<li>RING</li>
+					<li>SHEAR</li>
+					<li>STUD</li>
+					<li>SPACEBAR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcReinforcingMeshTypeEnum</span>
+				<ol class="nested">
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcRoadPartTypeEnum</span>
+				<ol class="nested">
+					<li>ROADSIDEPART</li>
+					<li>BUS_STOP</li>
+					<li>HARDSHOULDER</li>
+					<li>INTERSECTION</li>
+					<li>PASSINGBAY</li>
+					<li>ROADWAYPLATEAU</li>
+					<li>ROADSIDE</li>
+					<li>REFUGEISLAND</li>
+					<li>TOLLPLAZA</li>
+					<li>CENTRALRESERVE</li>
+					<li>SIDEWALK</li>
+					<li>PARKINGBAY</li>
+					<li>RAILWAYCROSSING</li>
+					<li>PEDESTRIAN_CROSSING</li>
+					<li>SOFTSHOULDER</li>
+					<li>BICYCLECROSSING</li>
+					<li>CENTRALISLAND</li>
+					<li>SHOULDER</li>
+					<li>TRAFFICLANE</li>
+					<li>ROADSEGMENT</li>
+					<li>ROUNDABOUT</li>
+					<li>LAYBY</li>
+					<li>CARRIAGEWAY</li>
+					<li>TRAFFICISLAND</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcRoleEnum</span>
+				<ol class="nested">
+					<li>SUPPLIER</li>
+					<li>MANUFACTURER</li>
+					<li>CONTRACTOR</li>
+					<li>SUBCONTRACTOR</li>
+					<li>ARCHITECT</li>
+					<li>STRUCTURALENGINEER</li>
+					<li>COSTENGINEER</li>
+					<li>CLIENT</li>
+					<li>BUILDINGOWNER</li>
+					<li>BUILDINGOPERATOR</li>
+					<li>MECHANICALENGINEER</li>
+					<li>ELECTRICALENGINEER</li>
+					<li>PROJECTMANAGER</li>
+					<li>FACILITIESMANAGER</li>
+					<li>CIVILENGINEER</li>
+					<li>COMMISSIONINGENGINEER</li>
+					<li>ENGINEER</li>
+					<li>OWNER</li>
+					<li>CONSULTANT</li>
+					<li>CONSTRUCTIONMANAGER</li>
+					<li>FIELDCONSTRUCTIONMANAGER</li>
+					<li>RESELLER</li>
+					<li>USERDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcRoofTypeEnum</span>
+				<ol class="nested">
+					<li>FLAT_ROOF</li>
+					<li>SHED_ROOF</li>
+					<li>GABLE_ROOF</li>
+					<li>HIP_ROOF</li>
+					<li>HIPPED_GABLE_ROOF</li>
+					<li>GAMBREL_ROOF</li>
+					<li>MANSARD_ROOF</li>
+					<li>BARREL_ROOF</li>
+					<li>RAINBOW_ROOF</li>
+					<li>BUTTERFLY_ROOF</li>
+					<li>PAVILION_ROOF</li>
+					<li>DOME_ROOF</li>
+					<li>FREEFORM</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSIPrefix</span>
+				<ol class="nested">
+					<li>EXA</li>
+					<li>PETA</li>
+					<li>TERA</li>
+					<li>GIGA</li>
+					<li>MEGA</li>
+					<li>KILO</li>
+					<li>HECTO</li>
+					<li>DECA</li>
+					<li>DECI</li>
+					<li>CENTI</li>
+					<li>MILLI</li>
+					<li>MICRO</li>
+					<li>NANO</li>
+					<li>PICO</li>
+					<li>FEMTO</li>
+					<li>ATTO</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSIUnitName</span>
+				<ol class="nested">
+					<li>AMPERE</li>
+					<li>BECQUEREL</li>
+					<li>CANDELA</li>
+					<li>COULOMB</li>
+					<li>CUBIC_METRE</li>
+					<li>DEGREE_CELSIUS</li>
+					<li>FARAD</li>
+					<li>GRAM</li>
+					<li>GRAY</li>
+					<li>HENRY</li>
+					<li>HERTZ</li>
+					<li>JOULE</li>
+					<li>KELVIN</li>
+					<li>LUMEN</li>
+					<li>LUX</li>
+					<li>METRE</li>
+					<li>MOLE</li>
+					<li>NEWTON</li>
+					<li>OHM</li>
+					<li>PASCAL</li>
+					<li>RADIAN</li>
+					<li>SECOND</li>
+					<li>SIEMENS</li>
+					<li>SIEVERT</li>
+					<li>SQUARE_METRE</li>
+					<li>STERADIAN</li>
+					<li>TESLA</li>
+					<li>VOLT</li>
+					<li>WATT</li>
+					<li>WEBER</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSanitaryTerminalTypeEnum</span>
+				<ol class="nested">
+					<li>BATH</li>
+					<li>BIDET</li>
+					<li>CISTERN</li>
+					<li>SHOWER</li>
+					<li>SINK</li>
+					<li>SANITARYFOUNTAIN</li>
+					<li>TOILETPAN</li>
+					<li>URINAL</li>
+					<li>WASHHANDBASIN</li>
+					<li>WCSEAT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSectionTypeEnum</span>
+				<ol class="nested">
+					<li>UNIFORM</li>
+					<li>TAPERED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSensorTypeEnum</span>
+				<ol class="nested">
+					<li>COSENSOR</li>
+					<li>CO2SENSOR</li>
+					<li>CONDUCTANCESENSOR</li>
+					<li>CONTACTSENSOR</li>
+					<li>FIRESENSOR</li>
+					<li>FLOWSENSOR</li>
+					<li>FROSTSENSOR</li>
+					<li>GASSENSOR</li>
+					<li>HEATSENSOR</li>
+					<li>HUMIDITYSENSOR</li>
+					<li>IDENTIFIERSENSOR</li>
+					<li>IONCONCENTRATIONSENSOR</li>
+					<li>LEVELSENSOR</li>
+					<li>LIGHTSENSOR</li>
+					<li>MOISTURESENSOR</li>
+					<li>MOVEMENTSENSOR</li>
+					<li>PHSENSOR</li>
+					<li>PRESSURESENSOR</li>
+					<li>RADIATIONSENSOR</li>
+					<li>RADIOACTIVITYSENSOR</li>
+					<li>SMOKESENSOR</li>
+					<li>SOUNDSENSOR</li>
+					<li>TEMPERATURESENSOR</li>
+					<li>WINDSENSOR</li>
+					<li>EARTHQUAKESENSOR</li>
+					<li>FOREIGNOBJECTDETECTIONSENSOR</li>
+					<li>OBSTACLESENSOR</li>
+					<li>RAINSENSOR</li>
+					<li>SNOWDEPTHSENSOR</li>
+					<li>TRAINSENSOR</li>
+					<li>TURNOUTCLOSURESENSOR</li>
+					<li>WHEELSENSOR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSequenceEnum</span>
+				<ol class="nested">
+					<li>START_START</li>
+					<li>START_FINISH</li>
+					<li>FINISH_START</li>
+					<li>FINISH_FINISH</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcShadingDeviceTypeEnum</span>
+				<ol class="nested">
+					<li>JALOUSIE</li>
+					<li>SHUTTER</li>
+					<li>AWNING</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSignTypeEnum</span>
+				<ol class="nested">
+					<li>MARKER</li>
+					<li>PICTORAL</li>
+					<li>MIRROR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSignalTypeEnum</span>
+				<ol class="nested">
+					<li>VISUAL</li>
+					<li>AUDIO</li>
+					<li>MIXED</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSimplePropertyTemplateTypeEnum</span>
+				<ol class="nested">
+					<li>P_SINGLEVALUE</li>
+					<li>P_ENUMERATEDVALUE</li>
+					<li>P_BOUNDEDVALUE</li>
+					<li>P_LISTVALUE</li>
+					<li>P_TABLEVALUE</li>
+					<li>P_REFERENCEVALUE</li>
+					<li>Q_LENGTH</li>
+					<li>Q_AREA</li>
+					<li>Q_VOLUME</li>
+					<li>Q_COUNT</li>
+					<li>Q_WEIGHT</li>
+					<li>Q_TIME</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSlabTypeEnum</span>
+				<ol class="nested">
+					<li>FLOOR</li>
+					<li>ROOF</li>
+					<li>LANDING</li>
+					<li>BASESLAB</li>
+					<li>APPROACH_SLAB</li>
+					<li>PAVING</li>
+					<li>WEARING</li>
+					<li>SIDEWALK</li>
+					<li>TRACKSLAB</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSolarDeviceTypeEnum</span>
+				<ol class="nested">
+					<li>SOLARCOLLECTOR</li>
+					<li>SOLARPANEL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSpaceHeaterTypeEnum</span>
+				<ol class="nested">
+					<li>CONVECTOR</li>
+					<li>RADIATOR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSpaceTypeEnum</span>
+				<ol class="nested">
+					<li>SPACE</li>
+					<li>PARKING</li>
+					<li>GFA</li>
+					<li>INTERNAL</li>
+					<li>EXTERNAL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSpatialZoneTypeEnum</span>
+				<ol class="nested">
+					<li>CONSTRUCTION</li>
+					<li>FIRESAFETY</li>
+					<li>LIGHTING</li>
+					<li>OCCUPANCY</li>
+					<li>SECURITY</li>
+					<li>THERMAL</li>
+					<li>TRANSPORT</li>
+					<li>VENTILATION</li>
+					<li>RESERVATION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcStackTerminalTypeEnum</span>
+				<ol class="nested">
+					<li>BIRDCAGE</li>
+					<li>COWL</li>
+					<li>RAINWATERHOPPER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcStairFlightTypeEnum</span>
+				<ol class="nested">
+					<li>STRAIGHT</li>
+					<li>WINDER</li>
+					<li>SPIRAL</li>
+					<li>CURVED</li>
+					<li>FREEFORM</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcStairTypeEnum</span>
+				<ol class="nested">
+					<li>STRAIGHT_RUN_STAIR</li>
+					<li>TWO_STRAIGHT_RUN_STAIR</li>
+					<li>QUARTER_WINDING_STAIR</li>
+					<li>QUARTER_TURN_STAIR</li>
+					<li>HALF_WINDING_STAIR</li>
+					<li>HALF_TURN_STAIR</li>
+					<li>TWO_QUARTER_WINDING_STAIR</li>
+					<li>TWO_QUARTER_TURN_STAIR</li>
+					<li>THREE_QUARTER_WINDING_STAIR</li>
+					<li>THREE_QUARTER_TURN_STAIR</li>
+					<li>SPIRAL_STAIR</li>
+					<li>DOUBLE_RETURN_STAIR</li>
+					<li>CURVED_RUN_STAIR</li>
+					<li>TWO_CURVED_RUN_STAIR</li>
+					<li>LADDER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcStateEnum</span>
+				<ol class="nested">
+					<li>READWRITE</li>
+					<li>READONLY</li>
+					<li>LOCKED</li>
+					<li>READWRITELOCKED</li>
+					<li>READONLYLOCKED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcStructuralCurveActivityTypeEnum</span>
+				<ol class="nested">
+					<li>CONST</li>
+					<li>LINEAR</li>
+					<li>POLYGONAL</li>
+					<li>EQUIDISTANT</li>
+					<li>SINUS</li>
+					<li>PARABOLA</li>
+					<li>DISCRETE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcStructuralCurveMemberTypeEnum</span>
+				<ol class="nested">
+					<li>RIGID_JOINED_MEMBER</li>
+					<li>PIN_JOINED_MEMBER</li>
+					<li>CABLE</li>
+					<li>TENSION_MEMBER</li>
+					<li>COMPRESSION_MEMBER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcStructuralSurfaceActivityTypeEnum</span>
+				<ol class="nested">
+					<li>CONST</li>
+					<li>BILINEAR</li>
+					<li>DISCRETE</li>
+					<li>ISOCONTOUR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcStructuralSurfaceMemberTypeEnum</span>
+				<ol class="nested">
+					<li>BENDING_ELEMENT</li>
+					<li>MEMBRANE_ELEMENT</li>
+					<li>SHELL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSubContractResourceTypeEnum</span>
+				<ol class="nested">
+					<li>PURCHASE</li>
+					<li>WORK</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSurfaceFeatureTypeEnum</span>
+				<ol class="nested">
+					<li>MARK</li>
+					<li>TAG</li>
+					<li>TREATMENT</li>
+					<li>DEFECT</li>
+					<li>HATCHMARKING</li>
+					<li>LINEMARKING</li>
+					<li>PAVEMENTSURFACEMARKING</li>
+					<li>SYMBOLMARKING</li>
+					<li>NONSKIDSURFACING</li>
+					<li>RUMBLESTRIP</li>
+					<li>TRANSVERSERUMBLESTRIP</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSurfaceSide</span>
+				<ol class="nested">
+					<li>POSITIVE</li>
+					<li>NEGATIVE</li>
+					<li>BOTH</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSwitchingDeviceTypeEnum</span>
+				<ol class="nested">
+					<li>CONTACTOR</li>
+					<li>DIMMERSWITCH</li>
+					<li>EMERGENCYSTOP</li>
+					<li>KEYPAD</li>
+					<li>MOMENTARYSWITCH</li>
+					<li>SELECTORSWITCH</li>
+					<li>STARTER</li>
+					<li>SWITCHDISCONNECTOR</li>
+					<li>TOGGLESWITCH</li>
+					<li>RELAY</li>
+					<li>START_AND_STOP_EQUIPMENT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcSystemFurnitureElementTypeEnum</span>
+				<ol class="nested">
+					<li>PANEL</li>
+					<li>WORKSURFACE</li>
+					<li>SUBRACK</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcTankTypeEnum</span>
+				<ol class="nested">
+					<li>BASIN</li>
+					<li>BREAKPRESSURE</li>
+					<li>EXPANSION</li>
+					<li>FEEDANDEXPANSION</li>
+					<li>PRESSUREVESSEL</li>
+					<li>STORAGE</li>
+					<li>VESSEL</li>
+					<li>OILRETENTIONTRAY</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcTaskDurationEnum</span>
+				<ol class="nested">
+					<li>ELAPSEDTIME</li>
+					<li>WORKTIME</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcTaskTypeEnum</span>
+				<ol class="nested">
+					<li>ATTENDANCE</li>
+					<li>CONSTRUCTION</li>
+					<li>DEMOLITION</li>
+					<li>DISMANTLE</li>
+					<li>DISPOSAL</li>
+					<li>INSTALLATION</li>
+					<li>LOGISTIC</li>
+					<li>MAINTENANCE</li>
+					<li>MOVE</li>
+					<li>OPERATION</li>
+					<li>REMOVAL</li>
+					<li>RENOVATION</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcTendonAnchorTypeEnum</span>
+				<ol class="nested">
+					<li>COUPLER</li>
+					<li>FIXED_END</li>
+					<li>TENSIONING_END</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcTendonConduitTypeEnum</span>
+				<ol class="nested">
+					<li>DUCT</li>
+					<li>COUPLER</li>
+					<li>GROUTING_DUCT</li>
+					<li>TRUMPET</li>
+					<li>DIABOLO</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcTendonTypeEnum</span>
+				<ol class="nested">
+					<li>BAR</li>
+					<li>COATED</li>
+					<li>STRAND</li>
+					<li>WIRE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcTextPath</span>
+				<ol class="nested">
+					<li>LEFT</li>
+					<li>RIGHT</li>
+					<li>UP</li>
+					<li>DOWN</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcTimeSeriesDataTypeEnum</span>
+				<ol class="nested">
+					<li>CONTINUOUS</li>
+					<li>DISCRETE</li>
+					<li>DISCRETEBINARY</li>
+					<li>PIECEWISEBINARY</li>
+					<li>PIECEWISECONSTANT</li>
+					<li>PIECEWISECONTINUOUS</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcTrackElementTypeEnum</span>
+				<ol class="nested">
+					<li>TRACKENDOFALIGNMENT</li>
+					<li>BLOCKINGDEVICE</li>
+					<li>VEHICLESTOP</li>
+					<li>SLEEPER</li>
+					<li>HALF_SET_OF_BLADES</li>
+					<li>SPEEDREGULATOR</li>
+					<li>DERAILER</li>
+					<li>FROG</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcTransformerTypeEnum</span>
+				<ol class="nested">
+					<li>CURRENT</li>
+					<li>FREQUENCY</li>
+					<li>INVERTER</li>
+					<li>RECTIFIER</li>
+					<li>VOLTAGE</li>
+					<li>CHOPPER</li>
+					<li>COMBINED</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcTransitionCode</span>
+				<ol class="nested">
+					<li>DISCONTINUOUS</li>
+					<li>CONTINUOUS</li>
+					<li>CONTSAMEGRADIENT</li>
+					<li>CONTSAMEGRADIENTSAMECURVATURE</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcTransitionCurve</span>
+				<ol class="nested">
+					<li>BIQUADRATICPARABOLA</li>
+					<li>BLOSSCURVE</li>
+					<li>CLOTHOIDCURVE</li>
+					<li>COSINECURVE</li>
+					<li>CUBICPARABOLA</li>
+					<li>SINECURVE</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcTransportElementFixedTypeEnum</span>
+				<ol class="nested">
+					<li>ELEVATOR</li>
+					<li>ESCALATOR</li>
+					<li>MOVINGWALKWAY</li>
+					<li>CRANEWAY</li>
+					<li>LIFTINGGEAR</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcTransportElementNonFixedTypeEnum</span>
+				<ol class="nested">
+					<li>VEHICLE</li>
+					<li>VEHICLETRACKED</li>
+					<li>ROLLINGSTOCK</li>
+					<li>VEHICLEWHEELED</li>
+					<li>VEHICLEAIR</li>
+					<li>CARGO</li>
+					<li>VEHICLEMARINE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcTrimmingPreference</span>
+				<ol class="nested">
+					<li>CARTESIAN</li>
+					<li>PARAMETER</li>
+					<li>UNSPECIFIED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcTubeBundleTypeEnum</span>
+				<ol class="nested">
+					<li>FINNED</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcUnitEnum</span>
+				<ol class="nested">
+					<li>ABSORBEDDOSEUNIT</li>
+					<li>AMOUNTOFSUBSTANCEUNIT</li>
+					<li>AREAUNIT</li>
+					<li>DOSEEQUIVALENTUNIT</li>
+					<li>ELECTRICCAPACITANCEUNIT</li>
+					<li>ELECTRICCHARGEUNIT</li>
+					<li>ELECTRICCONDUCTANCEUNIT</li>
+					<li>ELECTRICCURRENTUNIT</li>
+					<li>ELECTRICRESISTANCEUNIT</li>
+					<li>ELECTRICVOLTAGEUNIT</li>
+					<li>ENERGYUNIT</li>
+					<li>FORCEUNIT</li>
+					<li>FREQUENCYUNIT</li>
+					<li>ILLUMINANCEUNIT</li>
+					<li>INDUCTANCEUNIT</li>
+					<li>LENGTHUNIT</li>
+					<li>LUMINOUSFLUXUNIT</li>
+					<li>LUMINOUSINTENSITYUNIT</li>
+					<li>MAGNETICFLUXDENSITYUNIT</li>
+					<li>MAGNETICFLUXUNIT</li>
+					<li>MASSUNIT</li>
+					<li>PLANEANGLEUNIT</li>
+					<li>POWERUNIT</li>
+					<li>PRESSUREUNIT</li>
+					<li>RADIOACTIVITYUNIT</li>
+					<li>SOLIDANGLEUNIT</li>
+					<li>THERMODYNAMICTEMPERATUREUNIT</li>
+					<li>TIMEUNIT</li>
+					<li>VOLUMEUNIT</li>
+					<li>USERDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcUnitaryControlElementTypeEnum</span>
+				<ol class="nested">
+					<li>ALARMPANEL</li>
+					<li>CONTROLPANEL</li>
+					<li>GASDETECTIONPANEL</li>
+					<li>INDICATORPANEL</li>
+					<li>MIMICPANEL</li>
+					<li>HUMIDISTAT</li>
+					<li>THERMOSTAT</li>
+					<li>WEATHERSTATION</li>
+					<li>COMBINED</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcUnitaryEquipmentTypeEnum</span>
+				<ol class="nested">
+					<li>AIRHANDLER</li>
+					<li>AIRCONDITIONINGUNIT</li>
+					<li>DEHUMIDIFIER</li>
+					<li>SPLITSYSTEM</li>
+					<li>ROOFTOPUNIT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcValveTypeEnum</span>
+				<ol class="nested">
+					<li>AIRRELEASE</li>
+					<li>ANTIVACUUM</li>
+					<li>CHANGEOVER</li>
+					<li>CHECK</li>
+					<li>COMMISSIONING</li>
+					<li>DIVERTING</li>
+					<li>DRAWOFFCOCK</li>
+					<li>DOUBLECHECK</li>
+					<li>DOUBLEREGULATING</li>
+					<li>FAUCET</li>
+					<li>FLUSHING</li>
+					<li>GASCOCK</li>
+					<li>GASTAP</li>
+					<li>ISOLATING</li>
+					<li>MIXING</li>
+					<li>PRESSUREREDUCING</li>
+					<li>PRESSURERELIEF</li>
+					<li>REGULATING</li>
+					<li>SAFETYCUTOFF</li>
+					<li>STEAMTRAP</li>
+					<li>STOPCOCK</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcVibrationDamperTypeEnum</span>
+				<ol class="nested">
+					<li>BENDING_YIELD</li>
+					<li>SHEAR_YIELD</li>
+					<li>AXIAL_YIELD</li>
+					<li>FRICTION</li>
+					<li>VISCOUS</li>
+					<li>RUBBER</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcVibrationIsolatorTypeEnum</span>
+				<ol class="nested">
+					<li>COMPRESSION</li>
+					<li>SPRING</li>
+					<li>BASE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcVoidingFeatureTypeEnum</span>
+				<ol class="nested">
+					<li>CUTOUT</li>
+					<li>NOTCH</li>
+					<li>HOLE</li>
+					<li>MITER</li>
+					<li>CHAMFER</li>
+					<li>EDGE</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcWallTypeEnum</span>
+				<ol class="nested">
+					<li>MOVABLE</li>
+					<li>PARAPET</li>
+					<li>PARTITIONING</li>
+					<li>PLUMBINGWALL</li>
+					<li>SHEAR</li>
+					<li>SOLIDWALL</li>
+					<li>STANDARD</li>
+					<li>POLYGONAL</li>
+					<li>ELEMENTEDWALL</li>
+					<li>RETAININGWALL</li>
+					<li>WAVEWALL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcWasteTerminalTypeEnum</span>
+				<ol class="nested">
+					<li>FLOORTRAP</li>
+					<li>FLOORWASTE</li>
+					<li>GULLYSUMP</li>
+					<li>GULLYTRAP</li>
+					<li>ROOFDRAIN</li>
+					<li>WASTEDISPOSALUNIT</li>
+					<li>WASTETRAP</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcWindowPanelOperationEnum</span>
+				<ol class="nested">
+					<li>SIDEHUNGRIGHTHAND</li>
+					<li>SIDEHUNGLEFTHAND</li>
+					<li>TILTANDTURNRIGHTHAND</li>
+					<li>TILTANDTURNLEFTHAND</li>
+					<li>TOPHUNG</li>
+					<li>BOTTOMHUNG</li>
+					<li>PIVOTHORIZONTAL</li>
+					<li>PIVOTVERTICAL</li>
+					<li>SLIDINGHORIZONTAL</li>
+					<li>SLIDINGVERTICAL</li>
+					<li>REMOVABLECASEMENT</li>
+					<li>FIXEDCASEMENT</li>
+					<li>OTHEROPERATION</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcWindowPanelPositionEnum</span>
+				<ol class="nested">
+					<li>LEFT</li>
+					<li>MIDDLE</li>
+					<li>RIGHT</li>
+					<li>BOTTOM</li>
+					<li>TOP</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcWindowStyleConstructionEnum</span>
+				<ol class="nested">
+					<li>ALUMINIUM</li>
+					<li>HIGH_GRADE_STEEL</li>
+					<li>STEEL</li>
+					<li>WOOD</li>
+					<li>ALUMINIUM_WOOD</li>
+					<li>PLASTIC</li>
+					<li>OTHER_CONSTRUCTION</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcWindowStyleOperationEnum</span>
+				<ol class="nested">
+					<li>SINGLE_PANEL</li>
+					<li>DOUBLE_PANEL_VERTICAL</li>
+					<li>DOUBLE_PANEL_HORIZONTAL</li>
+					<li>TRIPLE_PANEL_VERTICAL</li>
+					<li>TRIPLE_PANEL_BOTTOM</li>
+					<li>TRIPLE_PANEL_TOP</li>
+					<li>TRIPLE_PANEL_LEFT</li>
+					<li>TRIPLE_PANEL_RIGHT</li>
+					<li>TRIPLE_PANEL_HORIZONTAL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcWindowTypeEnum</span>
+				<ol class="nested">
+					<li>WINDOW</li>
+					<li>SKYLIGHT</li>
+					<li>LIGHTDOME</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcWindowTypePartitioningEnum</span>
+				<ol class="nested">
+					<li>SINGLE_PANEL</li>
+					<li>DOUBLE_PANEL_VERTICAL</li>
+					<li>DOUBLE_PANEL_HORIZONTAL</li>
+					<li>TRIPLE_PANEL_VERTICAL</li>
+					<li>TRIPLE_PANEL_BOTTOM</li>
+					<li>TRIPLE_PANEL_TOP</li>
+					<li>TRIPLE_PANEL_LEFT</li>
+					<li>TRIPLE_PANEL_RIGHT</li>
+					<li>TRIPLE_PANEL_HORIZONTAL</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcWorkCalendarTypeEnum</span>
+				<ol class="nested">
+					<li>FIRSTSHIFT</li>
+					<li>SECONDSHIFT</li>
+					<li>THIRDSHIFT</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcWorkPlanTypeEnum</span>
+				<ol class="nested">
+					<li>ACTUAL</li>
+					<li>BASELINE</li>
+					<li>PLANNED</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+			<li>
+				<span class="caret">IfcWorkScheduleTypeEnum</span>
+				<ol class="nested">
+					<li>ACTUAL</li>
+					<li>BASELINE</li>
+					<li>PLANNED</li>
+					<li>USERDEFINED</li>
+					<li>NOTDEFINED</li>
+				</ol>
+			</li>
+		</ol>
+	</div>
+</div>
+		<script>
+			//EVENT LISTENER
+			var toggler = document.getElementsByClassName("caret");
+			var i;
+			for (i = 0; i < toggler.length; i++) {
+				  toggler[i].addEventListener("click", function(){
+					if(this.parentElement.querySelector(".nested") !=null){
+						this.parentElement.querySelector(".nested").classList.toggle("active");
+						this.classList.toggle("caret-down");
+					}
+				  });
+			}
+			
+			function expandOrCollapse(expand, divName){
+				var toggler = document.getElementById(divName).getElementsByClassName("caret");
+				  for (i=0; i < toggler.length; i++) {
+					var parent=toggler[i].parentElement;
+					if(parent.querySelector(".nested") !=null){
+						var isActive = parent.querySelector(".nested").classList.contains('active');
+						if(isActive != expand){
+							parent.querySelector(".nested").classList.toggle("active");
+							toggler[i].classList.toggle("caret-down");
+						}
+					}
+				  }
+			}
+		</script>
+	</body>
+</html>
