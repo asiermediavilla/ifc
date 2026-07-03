@@ -2,7 +2,7 @@
 export type ViewerLanguage = "en" | "es" | "eu" | "fr";
 
 /** Built-in appearance mode; `system` follows the browser preference. */
-export type ViewerTheme = "default" | "light" | "dark" | "system";
+export type ViewerTheme = "default" | "light" | "dark" | "green" | "tecnalia" | "system";
 
 /** Presentation-only appearance settings accepted by the iframe. */
 export interface ViewerAppearanceConfig {
@@ -14,7 +14,7 @@ export interface ViewerAppearanceConfig {
 /** Effective appearance returned by the iframe. */
 export interface AppliedViewerAppearance {
   requestedTheme: ViewerTheme;
-  resolvedTheme: "default" | "light" | "dark";
+  resolvedTheme: "default" | "light" | "dark" | "green" | "tecnalia";
   customStylesheetUrl?: string;
   tokens: Record<string, string>;
 }

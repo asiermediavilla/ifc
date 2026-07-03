@@ -3,6 +3,11 @@
   "wasmPath": "./wasm/web-ifc/",
   "language": "en",
   "translationsPath": "./i18n",
+  "appearance": {
+    "theme": "light",
+    "customStylesheetUrl": null,
+    "tokens": {}
+  },
   "defaultGroundMode": "grid",
   "defaultMapLayerId": "carto-voyager",
   "cache": {
@@ -46,7 +51,7 @@
     "showAnnotationsTool": true,
     "showIdsChecker": true,
     "showHelp": true,
-    "iconSize": "big"
+    "iconSize": "medium"
   },
   "mapLayers": [
     {
@@ -222,10 +227,5 @@
         }
       }
     ]
-  },
-  "appearance": {
-    "theme": "default",
-    "customStylesheetUrl": null,
-    "tokens": {}
   }
 }
